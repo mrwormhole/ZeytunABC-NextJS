@@ -8,6 +8,7 @@ import FloatingActionButton from "../components/floatingActionButton";
 import Footer from "../components/footer";
 import Introduction from "../components/introduction";
 import About from "../components/about";
+import Services from '../components/services';
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -50,6 +51,7 @@ export default function HomePage() {
       <main>
         <Introduction />
         <About />
+        <Services />
       </main>
 
       <FloatingActionButton />

@@ -7,7 +7,7 @@ $z-blue: #29335C;
 $z-yellow: #F3A712;
 $z-white: #F0CEA0;
 $z-brown: #534D41;
-$z-white-like: hsl(0, 0%, 94%);
+$z-white-like: #f0f0f0;
 
 // Zeytun ABC Fonts
 //$g-header-font: "Francois One";
@@ -30,6 +30,7 @@ $warning: $z-yellow;
 
 //navigation component styling
 .navbar {
+    border-bottom: 2px solid $z-white-like;
     .navbar-brand {
         img {
             min-height: 3rem;
@@ -43,6 +44,7 @@ $warning: $z-yellow;
         border-radius: 40px;
         padding: 0 1rem;
         font-family: serif;
+        text-transform: uppercase;;
     }
 
     .navbar-burger {
@@ -55,7 +57,7 @@ $warning: $z-yellow;
 
     #navbarBasicExample {
         .navbar-item {
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
     }
 }
@@ -291,3 +293,64 @@ $warning: $z-yellow;
     }
   }
   //about component styling
+
+  //service card component styling
+#service-card {
+    padding: 1rem; 
+    height: 100%;
+    background: $z-yellow;
+    overflow: hidden;
+    text-align: center;
+  
+    .card-content {
+      padding: 0.75rem;
+    }
+  
+    .card-icon-wrapper {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      .card-icon-shaper {
+    
+        border: 2px solid $z-white-like;
+        height: 80px;
+        width: 80px;
+        padding-top: 16px;
+        border-radius: 20px;
+      }
+    }
+  
+    .card-title {
+      padding-top: 1rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: $z-white-like;
+      font-family: serif;
+    }
+  
+    .card-subtitle {
+      padding-top: 0.5rem;
+      font-size: 1rem;
+      color: $z-white-like;
+      font-family: serif;
+    }
+  }
+  //service card component styling
+
+  //services component styling
+#services {
+    background-color: #fff;
+    .title {
+      font-size: 3rem;
+      color: $z-yellow;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    .card-image {
+        border: 2px solid black;
+    }
+  }
+  //services component styling
+  
