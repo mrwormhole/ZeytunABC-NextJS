@@ -300,10 +300,21 @@ $warning: $z-yellow;
     height: 100%;
     background: $z-yellow;
     overflow: hidden;
-    text-align: center;
+
+    .main-icon {
+        color: #f0f0f0;
+        font-size: 3rem;
+    }
+
+    .category-icon {
+        color: #f0f0f0;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
   
     .card-content {
       padding: 0.75rem;
+      text-align: center;
     }
   
     .card-icon-wrapper {
@@ -312,7 +323,6 @@ $warning: $z-yellow;
       display: flex;
       justify-content: center;
       .card-icon-shaper {
-    
         border: 2px solid $z-white-like;
         height: 80px;
         width: 80px;
@@ -322,8 +332,10 @@ $warning: $z-yellow;
     }
   
     .card-title {
+      display: inline-block;
       padding-top: 1rem;
-      font-size: 1.5rem;
+      font-size: 2rem;
+      font-weight: bolder;
       text-transform: uppercase;
       color: $z-white-like;
       font-family: serif;
@@ -331,9 +343,39 @@ $warning: $z-yellow;
   
     .card-subtitle {
       padding-top: 0.5rem;
-      font-size: 1rem;
+      font-size: 1.5rem;
       color: $z-white-like;
       font-family: serif;
+    }
+
+    .card-category-title {
+        display: inline-block;
+        padding-top: 2.5rem;
+        padding-left: 0.5rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: $z-white-like;
+        font-family: serif;
+    }
+
+    .card-category-subtitle {
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+        font-size: 1rem;
+        color: $z-white-like;
+        font-family: serif;
+    }
+
+    .button-centerer {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    a { 
+        width: 50%;
+        border: 2px solid white;
+        align-items: center;
     }
   }
   //service card component styling
@@ -350,7 +392,16 @@ $warning: $z-yellow;
 
     .card-image {
         border: 2px solid black;
+        height: 750px;
     }
-  }
-  //services component styling
+
+  
+}
+
+@media (max-width: 768px) {
+    .card-image {
+        height: auto !important;
+    }
+}
+//services component styling
   

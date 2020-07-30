@@ -32,29 +32,29 @@ export default function Services() {
             <br />
 
             <div className="columns is-centered">
-                <div className="column is-6-tablet is-4-desktop is-paddingless">
+                <div className="column is-6-tablet is-5-desktop is-paddingless">
                     <ServiceCard serviceName={accountancyServices} icons={accountancyIcons} 
                         serviceDescription={accountancyDescriptions}/>
                 </div>
-                <div className="column is-6-tablet is-4-desktop is-paddingless">
+                <div className="column is-6-tablet is-5-desktop is-paddingless">
                     <img className="card-image" src="/accountancy.png" alt="Accountacy Services" />
                 </div>
             </div>
             <div className="columns is-centered">
-                <div className="column is-6-tablet is-4-desktop is-paddingless">
+                <div className="column is-6-tablet is-5-desktop is-paddingless">
                     <img className="card-image" src="/taxation.png" alt="Taxation Services" />
                 </div>
-                <div className="column is-6-tablet is-4-desktop is-paddingless">
+                <div className="column is-6-tablet is-5-desktop is-paddingless">
                     <ServiceCard serviceName={taxationServices} icons={taxationsIcons}
                             serviceDescription={taxationDescriptions} />
                 </div>
             </div>
             <div className="columns is-centered">
-                <div className="column is-6-tablet is-4-desktop is-paddingless">
+                <div className="column is-6-tablet is-5-desktop is-paddingless">
                     <ServiceCard serviceName={consultancyServices} icons={consultancyIcons}
                             serviceDescription={consultancyDescriptions} />
                 </div>
-                <div className="column is-6-tablet is-4-desktop is-paddingless">
+                <div className="column is-6-tablet is-5-desktop is-paddingless">
                     <img className="card-image" src="/consultancy.png" alt="Consultancy Services" />
                 </div>
             </div>

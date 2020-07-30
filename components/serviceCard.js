@@ -6,37 +6,44 @@ export default function ServiceCard({serviceName, serviceDescription, icons}) {
             <div className="card-content">
                 <div className="card-icon-wrapper">
                     <div className="card-icon-shaper">
-                        <FontAwesomeIcon icon={icons[0]} style={{color: "#f0f0f0", fontSize: "3rem"}} />
+                        <FontAwesomeIcon className="main-icon" icon={icons[0]} />
                     </div>
                 </div>
 
                 <h4 className="card-title"> {serviceName[0]} </h4>
-
-                <p className="card-subtitle">
-                    {serviceDescription[0]}
-                </p>
+                <p className="card-subtitle"> {serviceDescription[0]} </p>
             </div>
 
             <div className="columns is-centered">
                 <div className="column is-6-tablet is-6-desktop is-paddingless">
-                    <FontAwesomeIcon icon={icons[1]} style={{color: "#f0f0f0", fontSize: "3rem"}} />
+                    <FontAwesomeIcon className="category-icon" icon={icons[1]} />
+                    <h4 className="card-category-title"> {serviceName[1]} </h4>
+                    <p className="card-category-subtitle">{serviceDescription[1]}</p>
                 </div>
                 <div className="column is-6-tablet is-6-desktop is-paddingless">
-                    <FontAwesomeIcon icon={icons[2]} style={{color: "#f0f0f0", fontSize: "3rem"}} />
+                    <FontAwesomeIcon className="category-icon" icon={icons[2]} />
+                    <h4 className="card-category-title"> {serviceName[2]} </h4>
+                    <p className="card-category-subtitle">{serviceDescription[2]}</p>
                 </div>
             </div>
             <div className="columns is-centered">
                 <div className="column is-6-tablet is-6-desktop is-paddingless">
-                    <FontAwesomeIcon icon={icons[3]} style={{color: "#f0f0f0", fontSize: "3rem"}} />
+                    <FontAwesomeIcon className="category-icon" icon={icons[3]} />
+                    <h4 className="card-category-title"> {serviceName[3]} </h4>
+                    <p className="card-category-subtitle">{serviceDescription[4]}</p>
                 </div>
                 <div className="column is-6-tablet is-6-desktop is-paddingless">
-                    <FontAwesomeIcon icon={icons[4]} style={{color: "#f0f0f0", fontSize: "3rem"}} />
+                    <FontAwesomeIcon className="category-icon" icon={icons[4]} />
+                    <h4 className="card-category-title"> {serviceName[4]} </h4>
+                    <p className="card-category-subtitle">{serviceDescription[4]}</p>
                 </div>
             </div>
 
-            <a className="button is-warning is-rounded is-medium" style={{width: "45%", border: "2px solid white"}}> 
-                Learn More 
-            </a>
+            <div className="button-centerer">
+                <a className="button is-warning is-rounded is-medium"> 
+                    Learn More 
+                </a>
+            </div>
         </div>
     );
 }
