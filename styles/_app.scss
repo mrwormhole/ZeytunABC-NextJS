@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Lobster&family=Merriweather:wght@400;700&display=swap');
 
 // Zeytun ABC Colors
 $z-red: #DB2B39;
@@ -10,8 +10,9 @@ $z-brown: #534D41;
 $z-white-like: #f0f0f0;
 
 // Zeytun ABC Fonts
-//$g-header-font: "Francois One";
-//$g-content-font: "Josefin Sans";
+$z-brand-font: "Lobster", cursive;
+$z-header-font: "Merriweather", serif;
+$z-content-font: "Lato", sans-serif;
 
 //Bulma Navbar Customizations
 $navbar-height: 5rem;
@@ -43,8 +44,8 @@ $warning: $z-yellow;
         margin-bottom: 1rem;
         border-radius: 40px;
         padding: 0 1rem;
-        font-family: serif;
-        text-transform: uppercase;;
+        font-family: $z-content-font;
+        text-transform: uppercase;
     }
 
     .navbar-burger {
@@ -65,22 +66,20 @@ $warning: $z-yellow;
 .company-title {
     color: $z-brown;
     font-weight: bolder;
-    font-family: sans-serif;
-    font-size: 1.5rem;
+    font-family: $z-brand-font;
+    font-size: 2.5rem;
     padding-left: 0.5rem;
 }
-  
-@media (max-width: 576px) {
-    .company-title {
-        font-size: 1.5rem;
-        color: $z-red;
-    }
-}
-  
+
 @media (max-width: 441px) {
     .company-title {
-        font-size: 1rem;
-        color: $z-red;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 341px) {
+    .company-title {
+        font-size: 1.5rem;
     }
 }
 //navigation component styling
@@ -259,9 +258,10 @@ $warning: $z-yellow;
     }
     
     .title {
+        word-break: break-word;
       font-size: 3rem;
       color: white;
-      font-family:  sans-serif;
+      font-family: $z-header-font;
       span {
         color: $z-yellow;
       }
@@ -270,7 +270,7 @@ $warning: $z-yellow;
     .subtitle {
       font-size: 1.5rem;
       color: $z-white;
-      font-family:  serif;
+      font-family: $z-content-font;
     }
   }
   //introduction component styling
@@ -281,14 +281,14 @@ $warning: $z-yellow;
     .title {
       font-size: 3rem;
       color: $z-brown;
-      font-family: sans-serif;
+      font-family: $z-header-font;
       text-align: center;
     }
   
     .subtitle {
       font-size: 1.5rem;
       color: $z-brown;
-      font-family: serif;
+      font-family: $z-content-font;
       line-height: 2rem;
     }
   }
@@ -335,17 +335,17 @@ $warning: $z-yellow;
       display: inline-block;
       padding-top: 1rem;
       font-size: 2rem;
-      font-weight: bolder;
+      font-weight: bold;
       text-transform: uppercase;
       color: $z-white-like;
-      font-family: serif;
+      font-family: $z-header-font;
     }
   
     .card-subtitle {
       padding-top: 0.5rem;
       font-size: 1.5rem;
       color: $z-white-like;
-      font-family: serif;
+      font-family: $z-content-font;
     }
 
     .card-category-title {
@@ -355,7 +355,7 @@ $warning: $z-yellow;
         font-size: 1.5rem;
         text-transform: uppercase;
         color: $z-white-like;
-        font-family: serif;
+        font-family: $z-header-font;
     }
 
     .card-category-subtitle {
@@ -363,7 +363,7 @@ $warning: $z-yellow;
         padding-left: 1rem;
         font-size: 1rem;
         color: $z-white-like;
-        font-family: serif;
+        font-family: $z-content-font;
     }
 
     .button-centerer {
@@ -386,7 +386,7 @@ $warning: $z-yellow;
     .title {
       font-size: 3rem;
       color: $z-yellow;
-      font-family: sans-serif;
+      font-family: $z-header-font;
       text-align: center;
     }
 

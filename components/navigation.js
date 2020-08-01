@@ -14,8 +14,8 @@ export default function Navigation() {
           <div className="container">
             <div className="navbar-brand">
               <a href="/" className="navbar-item">
-                <img width="96" src="/logo.svg" />
-                <p className="company-title">ZEYTUN ABC LTD</p>
+                <img width="96" src="/logo.svg" alt="Zeytun ABC logo"/>
+                <p className="company-title">Zeytun ABC</p>
               </a>
     
               <a role="button" 

@@ -12,16 +12,16 @@ export default function Introduction() {
                     <h2 className="subtitle"> Specialized in Accounting, Taxation and Consultancy Services </h2>
                     <br />
                     <div className="buttons has-addons is-left">
-                    <Link className="button is-primary is-rounded is-medium" style={{width: "45%"}}
+                    <Link className="button is-primary is-rounded is-medium" style={{width: "50%"}}
                         activeClass=""
                         to="services"
                         spy={true}
                         smooth={true}
                         offset={-80}
                         duration={500}> 
-                        How Can We Help? 
+                        Take a Look? 
                     </Link>
-                    <Link className="button is-warning is-rounded is-medium" style={{width: "45%"}}
+                    <Link className="button is-warning is-rounded is-medium" style={{width: "50%"}}
                         activeClass=""
                         to="contact"
                         spy={true}
