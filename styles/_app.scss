@@ -309,7 +309,7 @@ $warning: $z-yellow;
     .category-icon {
         color: #f0f0f0;
         font-size: 2rem;
-        margin-left: 1rem;
+        //margin-left: 1rem;
     }
   
     .card-content {
@@ -351,8 +351,8 @@ $warning: $z-yellow;
     .card-category-title {
         display: inline-block;
         padding-top: 2.5rem;
-        padding-left: 0.5rem;
-        font-size: 1.5rem;
+        margin-left: 1rem;
+        font-size: 1.25rem;
         text-transform: uppercase;
         color: $z-white-like;
         font-family: $z-header-font;
@@ -361,6 +361,7 @@ $warning: $z-yellow;
     .card-category-subtitle {
         padding-top: 0.5rem;
         padding-left: 1rem;
+        padding-right: 1rem;
         font-size: 1rem;
         color: $z-white-like;
         font-family: $z-content-font;
@@ -391,11 +392,21 @@ $warning: $z-yellow;
     }
 
     .card-image {
-        border: 2px solid black;
-        height: 750px;
+        //border: 2px solid black;
+        height: 600px;
     }
 
   
+}
+
+@media (max-width: 1382px ) {
+    .card-category-title {
+        font-size: 1rem !important;
+    }
+
+    .category-icon {
+        font-size: 1rem !important;
+    }
 }
 
 @media (max-width: 768px) {

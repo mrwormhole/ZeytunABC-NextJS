@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function ServiceCard({serviceName, serviceDescription, icons}) {
     return (
-        <div className="card " id="service-card">
+        <div className="card" id="service-card">
             <div className="card-content">
                 <div className="card-icon-wrapper">
                     <div className="card-icon-shaper">
@@ -16,25 +16,33 @@ export default function ServiceCard({serviceName, serviceDescription, icons}) {
 
             <div className="columns is-centered">
                 <div className="column is-6-tablet is-6-desktop is-paddingless">
-                    <FontAwesomeIcon className="category-icon" icon={icons[1]} />
-                    <h4 className="card-category-title"> {serviceName[1]} </h4>
+                    
+                    <h4 className="card-category-title"> 
+                        <FontAwesomeIcon className="category-icon" icon={icons[1]} /> {serviceName[1]} 
+                    </h4>
                     <p className="card-category-subtitle">{serviceDescription[1]}</p>
                 </div>
                 <div className="column is-6-tablet is-6-desktop is-paddingless">
-                    <FontAwesomeIcon className="category-icon" icon={icons[2]} />
-                    <h4 className="card-category-title"> {serviceName[2]} </h4>
+                    
+                    <h4 className="card-category-title"> 
+                        <FontAwesomeIcon className="category-icon" icon={icons[2]} /> {serviceName[2]} 
+                    </h4>
                     <p className="card-category-subtitle">{serviceDescription[2]}</p>
                 </div>
             </div>
             <div className="columns is-centered">
                 <div className="column is-6-tablet is-6-desktop is-paddingless">
-                    <FontAwesomeIcon className="category-icon" icon={icons[3]} />
-                    <h4 className="card-category-title"> {serviceName[3]} </h4>
+                
+                    <h4 className="card-category-title"> 
+                        <FontAwesomeIcon className="category-icon" icon={icons[3]} /> {serviceName[3]} 
+                    </h4>
                     <p className="card-category-subtitle">{serviceDescription[4]}</p>
                 </div>
                 <div className="column is-6-tablet is-6-desktop is-paddingless">
-                    <FontAwesomeIcon className="category-icon" icon={icons[4]} />
-                    <h4 className="card-category-title"> {serviceName[4]} </h4>
+    
+                    <h4 className="card-category-title">
+                        <FontAwesomeIcon className="category-icon" icon={icons[4]} /> {serviceName[4]} 
+                    </h4>                
                     <p className="card-category-subtitle">{serviceDescription[4]}</p>
                 </div>
             </div>
