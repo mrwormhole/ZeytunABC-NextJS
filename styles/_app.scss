@@ -26,6 +26,7 @@ $navbar-burger-color: $z-yellow;
 //Bulma Color Customizations
 $primary: $z-white;
 $warning: $z-yellow;
+$danger: $z-red;
 
 //Bulma Footer Customizations
 $footer-background-color: $z-brown;
@@ -477,6 +478,70 @@ $footer-padding: 3rem 1em 3rem 1rem;
       }
 }
 //achievements component syling
+
+//contact component styling
+#contact {
+    background-color: $z-white;
+
+    .contact-form {
+        background-color: $z-red;
+        border-radius: 40px;
+    }
+
+    .contact-card {
+        background-color: $z-yellow;
+        border-radius: 40px;
+    }
+
+    .title {
+        font-size: 3rem;
+        color: $z-brown;
+        font-family: $z-header-font;
+        text-align: center;
+    }
+
+    .small-title {
+        font-family: $z-content-font;
+        color: $z-white-like;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .notification {
+        display: none;
+    }
+
+    h5 {
+        font-family: $z-content-font;
+        color: $z-white-like;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .iframe-holder {
+        margin-top: 0.5rem;
+        height: 385px;
+    }
+
+    form {
+        label {
+            font-family: $z-content-font, serif;
+            color: $z-white-like;
+            font-size: 1rem;
+        }
+        button {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .iframe-holder {
+        height: auto !important;
+    }
+}
+//contact component styling
 
 //footer component syling
 footer {

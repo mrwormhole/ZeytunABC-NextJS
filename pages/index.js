@@ -11,6 +11,7 @@ import About from "../components/about";
 import Services from '../components/services';
 import Certification from '../components/certification';
 import Achievements from '../components/achievements';
+import Contact from '../components/contact';
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,8 +33,8 @@ export default function HomePage() {
 
       <Head>
         <meta name="title" content="Zeytun ABC London" />
-		    <meta name="description" content="Zeytun ABC London is a company established in London with a great team. We offer wide range of web development and social media management services with a wide range of languages at a reasonable cost. This is the official site of Goldenhand Software London." />
-		    <meta name="keywords" content="zeytun abc, accounting, london, zeytun abc london, zeytun abc accounting, software london, talha, altinel, talha altinel, web, development, web development london, web london, development london, london web development, web development agency, social, media, management, social media management london, media management london, social media london, website designer agency for convenient cost" />
+		    <meta name="description" content="Zeytun ABC LTD is a company established in London. We offer wide range of accountancy, taxation and consultancy services with highest reliablity and the most convenient costs. This is the official site of Zeytun ABC London." />
+		    <meta name="keywords" content="zeytun abc, accounting, london, zeytun abc london, zeytun abc accounting, software london, mehmet, altun, mehmet altun, zeyneb altun, accountancy, accountancy service, taxation service, consultancy service, accountancy taxation consultancy london, london accountant, accountancy agency, accounting for convenient cost, reliable accountant" />
 		    <meta name="robots" content="index, follow" />
 		    <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
 		    <meta name="language" content="English" />
@@ -56,8 +57,8 @@ export default function HomePage() {
         <About />
         <Achievements />
         <Services />
+        <Contact />
       </main>
-
       <FloatingActionButton />
       <Footer /> 
 

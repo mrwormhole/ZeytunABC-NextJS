@@ -21,7 +21,7 @@ export default function About() {
                         </p>
                         <br />
                         <div className="buttons is-centered">
-                            <Link className="button is-warning is-rounded is-medium" style={{width: "40%"}}
+                            <Link className="button is-danger is-rounded is-medium" style={{width: "40%"}}
                                 activeClass=""
                                 to="contact"
                                 spy={true}
