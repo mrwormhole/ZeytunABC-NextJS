@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faEnvelope, faPhone, faCalendar } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faEnvelope, faPhone, faPen } from '@fortawesome/free-solid-svg-icons'
 
 function isFormEmpty(data) {
     if (data.email.trim() == "" ||  data.fullName.trim() == "" ||
         data.message.trim() == "" || data.phoneNumber.trim() == "" ||
-        data.startDate.trim == "") {
+        data.subject.trim == "") {
             return true;
     }
     return false;    
@@ -14,7 +14,7 @@ function resetFormValues(e) {
     e.target.elements.name.value = "";
     e.target.elements.email.value = "";
     e.target.elements.number.value = "";
-    e.target.elements.date.value = "";
+    e.target.elements.subject.value = "";
     e.target.elements.message.value = "";
 }
 
@@ -39,15 +39,15 @@ export default function Form() {
     return (
         <form onSubmit={(e) => {
             e.preventDefault();
-            const [name, email, number, date, message] = e.target.elements;
+            const [name, email, number, subject, message] = e.target.elements;
             const data = {
                 fullName: name.value,
                 email: email.value,
                 phoneNumber: number.value,
-                startDate : date.value,
+                subject: subject.value,
                 message: message.value,
             };
-                ///asdsadsdas
+                
             if(!isFormEmpty(data)) {
                 fetch("/api/email", {
                     method: 'POST',
@@ -99,11 +99,11 @@ export default function Form() {
             </div>
 
             <div className="field">
-                <label className="label">Estimated Start Date</label>
+                <label className="label">Subject</label>
                 <div className="control has-icons-left">
-                    <input className="input" id="date" type="date" placeholder="Your estimated start date" />
+                    <input className="input" id="subject" type="text" placeholder="Your subject" />
                     <span className="icon is-small is-left">
-                        <FontAwesomeIcon icon={faCalendar} />
+                        <FontAwesomeIcon icon={faPen} />
                     </span>
                 </div>
             </div>
