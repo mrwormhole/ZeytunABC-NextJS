@@ -484,14 +484,18 @@ $footer-padding: 3rem 1em 3rem 1rem;
     background-color: $z-white;
 
     .contact-form {
-        background-color: $z-red;
+        background-color: $z-yellow;
         border-radius: 40px;
+        box-sizing: border-box;
+        margin: 0 20px 0 0;
     }
 
     .contact-card {
-        background-color: $z-yellow;
+        background-color: $z-red;
         border-radius: 40px;
-    }
+        box-sizing: border-box;
+        margin: 0 20px 0 0;
+    } 
 
     .title {
         font-size: 3rem;
@@ -532,15 +536,31 @@ $footer-padding: 3rem 1em 3rem 1rem;
             font-size: 1rem;
         }
         button {
+            border: 2px solid white;
+            align-items: center;
             width: 60%;
         }
     }
+
+    .columns {
+        margin-right: 0 !important
+    }
+
 }
 
 @media (max-width: 768px) {
     .iframe-holder {
         height: auto !important;
     }
+
+    .contact-form {
+        margin: 20px 0 0 0 !important;
+    }
+
+    .contact-card {
+        margin: 0 0 0 0 !important;
+    }
+
 }
 //contact component styling
 

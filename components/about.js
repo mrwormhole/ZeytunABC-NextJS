@@ -17,7 +17,6 @@ export default function About() {
                             <br /><br />Prioritising clients' needs with being highly reliable & convenient is our first way of helping people.
                             We take pride of being formal AAT member and formal partner of Edge Chartered Certified Accountants.
                             Zeytun ABC also provides services like corporation tax, self assessment, value added tax(VAT) and capital gains tax(CGT).
-
                         </p>
                         <br />
                         <div className="buttons is-centered">

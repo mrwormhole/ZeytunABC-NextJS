@@ -116,7 +116,7 @@ export default function Form() {
             </div>
 
             <div className="control buttons is-centered">
-                <button className="button is-warning is-rounded" type="submit" name="action">Send</button>
+                <button className=" button is-warning is-rounded is-medium" type="submit" name="action">Send</button>
             </div>
         </form>
     );
