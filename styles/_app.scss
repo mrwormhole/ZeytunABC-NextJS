@@ -27,6 +27,10 @@ $navbar-burger-color: $z-yellow;
 $primary: $z-white;
 $warning: $z-yellow;
 
+//Bulma Footer Customizations
+$footer-background-color: $z-brown;
+$footer-padding: 3rem 1em 3rem 1rem;
+
 @import "../node_modules/bulma/bulma.sass";
 
 //navigation component styling
@@ -396,7 +400,6 @@ $warning: $z-yellow;
         height: 600px;
     }
 
-  
 }
 
 @media (max-width: 1382px ) {
@@ -413,6 +416,76 @@ $warning: $z-yellow;
     .card-image {
         height: auto !important;
     }
+
+    .reverse-columns {
+        flex-direction: column-reverse;
+        display: flex;
+    }
 }
 //services component styling
+
+//certification component styling
+#certification {
+    background-color: $z-white-like;
+    border-bottom: 1px solid $z-brown;
+
+    .aat-title {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: $z-content-font;
+        margin-bottom: 0.25rem;
+        color: #00AB4E;
+    }
+
+    .ea-title {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: $z-content-font;
+        margin-bottom: 0.25rem;
+        color: #023E86;
+    }
+
+
+    //background-color: red;
+}
+//certification component styling
+
+//achievements component syling
+#achievements {
+    background-color: $z-white-like;
+    border-bottom: 1px solid $z-white;
+
+    svg {
+        color: $z-yellow;
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: $z-content-font;
+        color: $z-brown;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+      }
+      .subtitle {
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: $z-brand-font;
+        color: $z-yellow;
+        margin-top: 0.25rem;;
+      }
+}
+//achievements component syling
+
+//footer component syling
+footer {
+    color: $z-white-like;
+    font-family: $z-content-font;
+    font-weight: 1rem;
+    strong {
+        color: $z-white;
+    }
+}
+//footer component syling
   

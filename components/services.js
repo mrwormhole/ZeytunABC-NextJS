@@ -31,7 +31,7 @@ export default function Services() {
             <h2 className="title"> Our Services </h2>
             <br />
 
-            <div className="columns is-centered is-vcentered mt-5">
+            <div className="columns reverse-columns is-centered is-vcentered mt-5">
                 <div className="column is-6-tablet is-6-desktop is-paddingless">
                     <ServiceCard serviceName={accountancyServices} icons={accountancyIcons} 
                         serviceDescription={accountancyDescriptions}/>
@@ -49,7 +49,7 @@ export default function Services() {
                             serviceDescription={taxationDescriptions} />
                 </div>
             </div>
-            <div className="columns is-centered is-vcentered mt-5">
+            <div className="columns reverse-columns is-centered is-vcentered mt-5">
                 <div className="column is-6-tablet is-6-desktop is-paddingless">
                     <ServiceCard serviceName={consultancyServices} icons={consultancyIcons}
                             serviceDescription={consultancyDescriptions} />

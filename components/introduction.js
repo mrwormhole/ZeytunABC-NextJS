@@ -19,7 +19,7 @@ export default function Introduction() {
                         smooth={true}
                         offset={-80}
                         duration={500}> 
-                        Take a Look? 
+                        Have a Look? 
                     </Link>
                     <Link className="button is-warning is-rounded is-medium" style={{width: "50%"}}
                         activeClass=""

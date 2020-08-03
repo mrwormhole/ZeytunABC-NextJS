@@ -9,6 +9,8 @@ import Footer from "../components/footer";
 import Introduction from "../components/introduction";
 import About from "../components/about";
 import Services from '../components/services';
+import Certification from '../components/certification';
+import Achievements from '../components/achievements';
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -50,7 +52,9 @@ export default function HomePage() {
       <Navigation />
       <main>
         <Introduction />
+        <Certification />
         <About />
+        <Achievements />
         <Services />
       </main>
 
