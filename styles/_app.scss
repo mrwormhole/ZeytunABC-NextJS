@@ -6,7 +6,6 @@ $z-red: #DB2B39;
 $z-blue: #29335C;
 $z-yellow: #F3A712;
 $z-white: #F0CEA0;
-$z-brown: #534D41;
 $z-white-like: #f0f0f0;
 
 // Zeytun ABC Fonts
@@ -14,11 +13,15 @@ $z-brand-font: "Lobster", cursive;
 $z-header-font: "Merriweather", serif;
 $z-content-font: "Lato", sans-serif;
 
+// #363636 PATTERN COLOR
+// #222021 PATTERN BACKGROUND
+
 //Bulma Navbar Customizations
 $navbar-height: 5rem;
-$navbar-item-color: $z-yellow;
+$navbar-background-color: #222021;
+$navbar-item-color: #d6b666;
 $navbar-item-active-color: $z-yellow;
-$navbar-item-active-background-color: $z-brown;
+$navbar-item-active-background-color: #d6b666;
 $navbar-item-hover-color: $z-yellow;
 $navbar-item-hover-background-color: $z-white-like;
 $navbar-burger-color: $z-yellow;
@@ -29,7 +32,7 @@ $warning: $z-yellow;
 $danger: $z-red;
 
 //Bulma Footer Customizations
-$footer-background-color: $z-brown;
+$footer-background-color: $z-blue;
 $footer-padding: 3rem 1em 3rem 1rem;
 
 @import "../node_modules/bulma/bulma.sass";
@@ -47,10 +50,13 @@ $footer-padding: 3rem 1em 3rem 1rem;
     .navbar-item {
         margin-top: 1rem;
         margin-bottom: 1rem;
-        border-radius: 40px;
+        border-radius: 20px;
         padding: 0 1rem;
-        font-family: $z-content-font;
-        text-transform: uppercase;
+        font-family: $z-header-font;
+        //text-transform: ;
+        font-weight: bold;
+        font-style: italic;
+        color: $z-white-like !important;
     }
 
     .navbar-burger {
@@ -69,7 +75,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
 }
 
 .company-title {
-    color: $z-brown;
+    color: $z-red;
     font-weight: bolder;
     font-family: $z-brand-font;
     font-size: 2.5rem;
@@ -119,7 +125,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
     animation-duration: 2000ms;
     top: calc(65px / 2.3077);
     left: calc(65px / 2.3077);
-    background-color: $z-brown;
+    background-color: $z-red;
     position: absolute;
     animation-iteration-count: infinite;
 }
@@ -174,7 +180,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
     animation-duration: 2000ms;
     top: calc(65px / 3);
     left: calc(65px / 3);
-    background-color: $z-brown;
+    background-color: $z-red;
     animation: breeding-rhombus-spinner-animation-child-big 2s infinite;
     animation-delay: 0.5s;
 }
@@ -258,8 +264,10 @@ $footer-padding: 3rem 1em 3rem 1rem;
 //introduction component styling
 #home {
     .hero {
-      background-color: $z-brown;
       margin-top: 80px;
+      background-image: url("../public/pattern.jpg");
+      background-repeat: repeat;
+      background-attachment: fixed;
     }
     
     .title {
@@ -285,14 +293,14 @@ $footer-padding: 3rem 1em 3rem 1rem;
     background-color: $z-white;
     .title {
       font-size: 3rem;
-      color: $z-brown;
+      color: $z-red;
       font-family: $z-header-font;
       text-align: center;
     }
   
     .subtitle {
       font-size: 1.5rem;
-      color: $z-brown;
+      color: $z-red;
       font-family: $z-content-font;
       line-height: 2rem;
     }
@@ -428,7 +436,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
 //certification component styling
 #certification {
     background-color: $z-white-like;
-    border-bottom: 1px solid $z-brown;
+    border-bottom: 1px solid $z-blue;
 
     .aat-title {
         font-size: 2rem;
@@ -465,7 +473,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
         font-size: 1rem;
         font-weight: 700;
         font-family: $z-content-font;
-        color: $z-brown;
+        color: $z-blue;
         margin-top: 0.25rem;
         margin-bottom: 0.25rem;
       }
@@ -500,7 +508,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
     .title {
         font-size: 3rem;
         margin-bottom: 3rem;
-        color: $z-brown;
+        color: $z-blue;
         font-family: $z-header-font;
         text-align: center;
     }
