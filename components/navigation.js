@@ -15,7 +15,6 @@ export default function Navigation() {
             <div className="navbar-brand">
               <a href="/" className="navbar-item">
                 <img src="/logo.png" alt="Zeytun ABC logo"/>
-                {/*<p className="company-title">Zeytun ABC</p>*/}
               </a>
     
               <a role="button" 
@@ -32,7 +31,7 @@ export default function Navigation() {
     
             <div id="navbarBasicExample" className="navbar-menu"> 
               <div className="navbar-end">
-                <Link className="navbar-item"
+                <Link className="navbar-item navbar-item-hoverable"
                   activeClass="is-active"
                   to="home"
                   spy={true}
@@ -41,16 +40,7 @@ export default function Navigation() {
                   duration={500} onClick={() => toggleBurger()}> 
                     Home 
                 </Link>
-                <Link className="navbar-item"
-                  activeClass="is-active"
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={500} onClick={() => toggleBurger()}> 
-                    About 
-                </Link>
-                <Link className="navbar-item"
+                <Link className="navbar-item navbar-item-hoverable"
                   activeClass="is-active"
                   to="services"
                   spy={true}
@@ -59,7 +49,16 @@ export default function Navigation() {
                   duration={500} onClick={() => toggleBurger()}> 
                     Services
                 </Link>
-                <Link className="navbar-item"
+                <Link className="navbar-item navbar-item-hoverable"
+                  activeClass="is-active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500} onClick={() => toggleBurger()}> 
+                    About 
+                </Link>
+                <Link className="navbar-item navbar-item-hoverable"
                   activeClass="is-active"
                   to="contact"
                   spy={true}

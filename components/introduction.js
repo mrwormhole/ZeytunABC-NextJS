@@ -6,11 +6,11 @@ export default function Introduction() {
             <div className="hero is-fullheight-with-navbar has-background-pattern">
                 <div className="hero-body">
                     <div className="columns">
-                    <div className="column is-5 is-offset-1">
+                    <div className="column is-8 is-offset-2">
                         <h1 className="title"> We provide perfect solutions for businesses and self employed individuals who need <span>convenient and reliable</span> accountancy services</h1>
                         <br />
-                        <h2 className="subtitle"> Specialized in Accounting, Taxation and Consultancy Services </h2>
-                        <br />
+                        <h2 className="subtitle"> Specialized in Accounting, Bookkeeping and Consultancy Services </h2>
+                        
                         {/*<div className="buttons has-addons is-left">
                         <Link className="button is-primary is-rounded is-medium" style={{width: "50%"}}
                             activeClass=""
