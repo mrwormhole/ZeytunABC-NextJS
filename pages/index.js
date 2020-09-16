@@ -54,9 +54,9 @@ export default function HomePage() {
       <main>
         <Introduction />
         <Certification />
-        <About />
-        <Achievements />
         <Services />
+        <Achievements />
+        <About />
         <Contact />
       </main>
       <FloatingActionButton />

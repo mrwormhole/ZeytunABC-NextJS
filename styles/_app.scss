@@ -55,12 +55,12 @@ $footer-padding: 3rem 1em 3rem 1rem;
     }
 
     .is-active {
-        color: $z-cream !important;
+        color:  $z-yellow !important;
     }
 
     .navbar-item-hoverable {
         &:hover {
-            border-bottom: 2px solid $z-cream;
+            border-bottom: 2px solid  $z-yellow;
         }
     }
 
@@ -110,7 +110,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
     animation-duration: 2000ms;
     top: calc(65px / 2.3077);
     left: calc(65px / 2.3077);
-    background-color: $z-cream;
+    background-color: $z-yellow;
     position: absolute;
     animation-iteration-count: infinite;
 }
@@ -165,7 +165,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
     animation-duration: 2000ms;
     top: calc(65px / 3);
     left: calc(65px / 3);
-    background-color: $z-cream;
+    background-color:  $z-yellow;
     animation: breeding-rhombus-spinner-animation-child-big 2s infinite;
     animation-delay: 0.5s;
 }
@@ -229,8 +229,8 @@ $footer-padding: 3rem 1em 3rem 1rem;
 //floating action button component styling
 .floating-action-button {
     position: fixed;
-    background: $z-cream;
-    color: $z-black-lighter;
+    background: $z-yellow;
+    color: $z-white-like;
     text-align: center;
     font-size: 16px;
     border-radius: 50%;
@@ -239,9 +239,9 @@ $footer-padding: 3rem 1em 3rem 1rem;
     z-index: 11;
 
     &:hover {
-        color: $z-cream;
-        background: $z-black-lighter;
-        border: 1px solid $z-cream;
+        color:  $z-yellow;
+        background: $z-white-like;
+        border: 1px solid $z-yellow;
     }
 }
 //floating action button component styling
@@ -267,7 +267,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
     
     .subtitle {
       font-size: 2rem;
-      color: $z-cream;
+      color:  $z-yellow;
       font-family: $z-content-font;
     }
   }
@@ -384,14 +384,28 @@ $footer-padding: 3rem 1em 3rem 1rem;
     background-color: #fff;
     .title {
       font-size: 3rem;
-      color: $z-orange;
+      color: $z-black-lighter;
       font-family: $z-header-font;
       text-align: center;
     }
 
     .card-image {
-        //border: 2px solid black;
         height: 600px;
+    }
+
+    .service-box {
+        background-color: $z-black-lighter;
+        color: $z-white-darker;
+        svg {
+            color: $z-yellow;
+            font-size: 3rem !important;
+        }
+        h2 {
+            margin-top: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+        font-size: 1.5rem;
+        font-family: $z-content-font;
     }
 
 }
@@ -442,11 +456,10 @@ $footer-padding: 3rem 1em 3rem 1rem;
 
 //achievements component syling
 #achievements {
-    background-color: $z-white-like;
-    border-bottom: 1px solid $z-cream;
+    background-color: $z-white-darker;
 
     svg {
-        color: $z-orange;
+        color: $z-yellow;
         font-size: 2rem;
     }
 
@@ -454,7 +467,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
         font-size: 1rem;
         font-weight: 700;
         font-family: $z-content-font;
-        color: $z-blue;
+        color: $z-black-pure;
         margin-top: 0.25rem;
         margin-bottom: 0.25rem;
       }
@@ -462,7 +475,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
         font-size: 1rem;
         font-weight: 700;
         font-family: $z-brand-font;
-        color: $z-orange;
+        color: $z-black-pure;
         margin-top: 0.25rem;;
       }
 }
