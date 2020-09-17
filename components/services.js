@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalculator, faBook, faEnvelopeOpenText, faIdBadge, faPenFancy, faBriefcase, faCalendarDay, faTasks, faStamp, faBuilding, faUsers, faChartLine, faUserTie, faWarehouse, faThumbtack, faMoneyBill, faMoneyCheck } from '@fortawesome/free-solid-svg-icons'
+import { faCalculator, faBook, faEnvelopeOpenText, faIdBadge, faPenFancy, faBriefcase, faTasks, faBuilding, faUsers, faUserTie, faFileInvoiceDollar, faFileInvoice } from '@fortawesome/free-solid-svg-icons'
 //import ServiceCard from './serviceCard'
 
 export default function Services() {
@@ -73,56 +73,56 @@ export default function Services() {
                     <h2>Year-End Account Preparation</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <FontAwesomeIcon className="category-icon" icon={faMoneyCheck} />
+                    <FontAwesomeIcon className="category-icon" icon={faFileInvoice} />
                     <h2>VAT Returns</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box  mt-2 mx-5">
-                    <FontAwesomeIcon className="category-icon" icon={faMoneyCheck} />
+                    <FontAwesomeIcon className="category-icon" icon={faFileInvoiceDollar} />
                     <h2>Payroll(PAYE)</h2>
                 </div>
             </div>
 
-            <div className="columns is-centered is-vcentered">
+            <div className="columns is-centered mt-2 is-vcentered">
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <FontAwesomeIcon className="category-icon" icon={faMoneyCheck} />
+                    <FontAwesomeIcon className="category-icon" icon={faBriefcase} />
                     <h2>Business Start Up</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <FontAwesomeIcon className="category-icon" icon={faMoneyCheck} />
+                    <FontAwesomeIcon className="category-icon" icon={faPenFancy} />
                     <h2>Company Formation</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <FontAwesomeIcon className="category-icon" icon={faMoneyCheck} />
+                    <FontAwesomeIcon className="category-icon" icon={faUserTie} />
                     <h2>Secretarial Services</h2>
                 </div>
             </div>
 
-            <div className="columns is-centered is-vcentered">
+            <div className="columns is-centered mt-2 is-vcentered">
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <FontAwesomeIcon className="category-icon" icon={faMoneyCheck} />
+                    <FontAwesomeIcon className="category-icon" icon={faBook} />
                     <h2>Bookkeeping</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <FontAwesomeIcon className="category-icon" icon={faMoneyCheck} />
+                    <FontAwesomeIcon className="category-icon" icon={faTasks} />
                     <h2>Audit</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <FontAwesomeIcon className="category-icon" icon={faMoneyCheck} />
+                    <FontAwesomeIcon className="category-icon" icon={faIdBadge} />
                     <h2>Management Accounts</h2>
                 </div>
             </div>
 
-            <div className="columns is-centered is-vcentered">
+            <div className="columns is-centered mt-2 is-vcentered">
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <FontAwesomeIcon className="category-icon" icon={faMoneyCheck} />
+                    <FontAwesomeIcon className="category-icon" icon={faBuilding} />
                     <h2>Corporation Tax</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <FontAwesomeIcon className="category-icon" icon={faMoneyCheck} />
+                    <FontAwesomeIcon className="category-icon" icon={faEnvelopeOpenText} />
                     <h2>Personal Tax</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <FontAwesomeIcon className="category-icon" icon={faMoneyCheck} />
+                    <FontAwesomeIcon className="category-icon" icon={faUsers} />
                     <h2>ECAA Agreement</h2>
                 </div>
             </div>

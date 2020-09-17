@@ -28,8 +28,8 @@ $warning: $z-orange;
 $danger: $z-red;
 
 //Bulma Footer Customizations
-$footer-background-color: $z-blue;
-$footer-padding: 3rem 1em 3rem 1rem;
+$footer-background-color: $z-black-lighter;
+$footer-padding: 3rem 1rem 3rem 1rem;
 
 @import "../node_modules/bulma/bulma.sass";
 
@@ -275,19 +275,22 @@ $footer-padding: 3rem 1em 3rem 1rem;
 
   //about component styling
 #about {
-    background-color: $z-cream;
+    background-color: $z-black-lighter;
+    background-image: url("../public/pattern.jpg");
+      background-repeat: repeat;
+      background-attachment: fixed;
     .title {
       font-size: 3rem;
-      color: $z-red;
+      color: $z-yellow;
       font-family: $z-header-font;
       text-align: center;
     }
   
     .subtitle {
       font-size: 1.5rem;
-      color: $z-red;
+      color: $z-white-like;
       font-family: $z-content-font;
-      line-height: 2rem;
+      line-height: 2.5rem;
     }
   }
   //about component styling
@@ -467,7 +470,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
         font-size: 1rem;
         font-weight: 700;
         font-family: $z-content-font;
-        color: $z-black-pure;
+        color: $z-black-lighter;
         margin-top: 0.25rem;
         margin-bottom: 0.25rem;
       }
@@ -475,7 +478,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
         font-size: 1rem;
         font-weight: 700;
         font-family: $z-brand-font;
-        color: $z-black-pure;
+        color: $z-black-lighter;
         margin-top: 0.25rem;;
       }
 }
@@ -483,8 +486,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
 
 //contact component styling
 #contact {
-    background-color: $z-cream;
-
+    background-color: $z-white-like;
     .contact-form {
         background-color: $z-orange;
         border-radius: 40px;
@@ -502,7 +504,7 @@ $footer-padding: 3rem 1em 3rem 1rem;
     .title {
         font-size: 3rem;
         margin-bottom: 3rem;
-        color: $z-blue;
+        color: $z-black-lighter;
         font-family: $z-header-font;
         text-align: center;
     }
@@ -572,7 +574,7 @@ footer {
     font-family: $z-content-font;
     font-weight: 1rem;
     strong {
-        color: $z-cream;
+        color: $z-yellow;
     }
 }
 //footer component syling

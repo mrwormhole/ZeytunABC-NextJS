@@ -5,7 +5,7 @@ import { faHome, faPhone, faEnvelope  } from '@fortawesome/free-solid-svg-icons'
 export default function Contact() {
     return (
         <section className="section" id="contact">
-            <h2 className="title"> Contact Us</h2>
+            <h2 className="title"> Contact</h2>
             <div className="container">
                 <div className="columns reverse-columns">
                     <div className="column is-8 contact-form">

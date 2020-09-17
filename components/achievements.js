@@ -1,6 +1,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUsers, faBriefcase, faBug, faSmile } from '@fortawesome/free-solid-svg-icons'
+import { faUsers, faBriefcase, faBug, faSmile, faMoneyBill, faMoneyBillWaveAlt, faMoneyBillWave } from '@fortawesome/free-solid-svg-icons'
 
 export default function Achievements() {
     return (
@@ -22,7 +22,7 @@ export default function Achievements() {
                 </div>
                 <div className="level-item has-text-centered">
                     <div>
-                        <FontAwesomeIcon icon={faBug} />
+                        <FontAwesomeIcon icon={faMoneyBillWave} />
                         <p className="title">Tax Return Savings</p>
                         <p className="subtitle">£100k</p>
                     </div>

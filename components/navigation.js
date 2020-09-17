@@ -36,7 +36,7 @@ export default function Navigation() {
                   to="home"
                   spy={true}
                   smooth={true}
-                  offset={-80}
+                  offset={-95}
                   duration={500} onClick={() => toggleBurger()}> 
                     Home 
                 </Link>
@@ -45,7 +45,7 @@ export default function Navigation() {
                   to="services"
                   spy={true}
                   smooth={true}
-                  offset={-80}
+                  offset={-95}
                   duration={500} onClick={() => toggleBurger()}> 
                     Services
                 </Link>
@@ -54,7 +54,7 @@ export default function Navigation() {
                   to="about"
                   spy={true}
                   smooth={true}
-                  offset={-80}
+                  offset={-95}
                   duration={500} onClick={() => toggleBurger()}> 
                     About 
                 </Link>
@@ -63,7 +63,7 @@ export default function Navigation() {
                   to="contact"
                   spy={true}
                   smooth={true}
-                  offset={-80}
+                  offset={-95}
                   duration={500} onClick={() => toggleBurger()}> 
                     Contact 
                 </Link>
