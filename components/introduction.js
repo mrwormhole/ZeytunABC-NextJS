@@ -3,7 +3,15 @@ import { Link } from "react-scroll";
 export default function Introduction() {
     return (
         <section className="section is-paddingless" id="home">
-            <div className="hero is-fullheight-with-navbar has-background-pattern">
+            <div data-aos="slide-down"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+                className="hero is-fullheight-with-navbar has-background-pattern">
                 <div className="hero-body">
                     <div className="columns">
                     <div className="column is-8 is-offset-2">

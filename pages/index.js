@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useState, useEffect } from 'react';
+import AOS from "aos";
 
 import Preloader from '../components/preloader'
 import Navigation from '../components/navigation';
@@ -19,6 +20,7 @@ export default function HomePage() {
   useEffect(() => {
     setTimeout(() => { 
       setIsLoading(false);
+      AOS.init();
     }, 2000);
   }, [isLoading]);
 
