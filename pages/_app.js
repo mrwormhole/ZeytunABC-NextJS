@@ -1,4 +1,3 @@
-import 'aos/dist/aos.css';
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import "../styles/_app.scss"
