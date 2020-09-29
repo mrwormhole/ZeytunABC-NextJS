@@ -2,7 +2,7 @@ export default function Preloader() {
     return (
         <React.Fragment>
         <div className="preloader-overlay">
-            <h1 className="welcome-title">Welcome to <span>Zeytun ABC</span></h1>
+            <h1 className="welcome-title">Welcome to <br /><span>Zeytun ABC</span></h1>
             <div className="breeding-rhombus-spinner">
                 <div className="rhombus child-1"></div>
                 <div className="rhombus child-2"></div>

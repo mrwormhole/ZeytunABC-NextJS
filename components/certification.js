@@ -1,3 +1,6 @@
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export default function Certification() {
     return (
         <section className="section" id="certification">
@@ -5,16 +8,20 @@ export default function Certification() {
                 <div className="column is-8">
                 <h2 className="title">
                     Providing solutions with Business Specialists (PhD), 
-                    Certified Chartered Accountants (ACCE,FCCA) and Qualified Bookkeepers (AAT)
+                    Certified Chartered Accountants (ACCA, FCCA) and Qualified Bookkeepers (AAT)
+                    <br /> <br />
+                    <FontAwesomeIcon className="tick-icon" icon={faCheckCircle} /> Registered to Information Commissioner's Office (ICO)
                 </h2>
                 </div>
-                <div className="column is-4 ">
+                <div className="column is-2">
                     <div className="certification-logo-image-wrapper" >
-                        <div><img src="/ACCA.png" /></div>
-                        <div><img src="/AAT.png" /></div>
-                        <div><img src="/EA.png" /></div>                       
-                    </div>
+                        <div className="certification-logo-image"><img src="/ACCA.png" /></div>
+                        <div className="certification-logo-image"><img src="/AAT.png" /></div>  
+                        <div className="certification-logo-image"><img src="/ICO.png" /></div> 
+                        <div className="certification-logo-image"><img src="/CIMA.png" /></div>
+                    </div>  
                 </div>
+
             </div>
             <div className="container">
                 
