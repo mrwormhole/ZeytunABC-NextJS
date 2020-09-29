@@ -88,16 +88,17 @@ $footer-padding: 3rem 1rem 3rem 1rem;
     right: 0;
     left: 0;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: $z-black-pure;
 }
 
 .breeding-rhombus-spinner {
-    height: 65px;
-    width: 65px;
-    position: relative;
+    height: 130px;
+    width: 130px;
     transform: rotate(45deg);
-    left: 45%;
-    top: 45%;
 }
 
 .breeding-rhombus-spinner, .breeding-rhombus-spinner * {
@@ -105,11 +106,11 @@ $footer-padding: 3rem 1rem 3rem 1rem;
 }
 
 .breeding-rhombus-spinner .rhombus {
-    height: calc(65px / 7.5);
-    width: calc(65px / 7.5);
+    height: calc(130px / 7.5);
+    width: calc(130px / 7.5);
     animation-duration: 2000ms;
-    top: calc(65px / 2.3077);
-    left: calc(65px / 2.3077);
+    top: calc(130px / 2.3077);
+    left: calc(130px / 2.3077);
     background-color: $z-yellow;
     position: absolute;
     animation-iteration-count: infinite;
@@ -160,11 +161,11 @@ $footer-padding: 3rem 1rem 3rem 1rem;
 }
 
 .breeding-rhombus-spinner .rhombus.big {
-    height: calc(65px / 3);
-    width: calc(65px / 3);
+    height: calc(130px / 3);
+    width: calc(130px / 3);
     animation-duration: 2000ms;
-    top: calc(65px / 3);
-    left: calc(65px / 3);
+    top: calc(130px / 3);
+    left: calc(130px / 3);
     background-color:  $z-yellow;
     animation: breeding-rhombus-spinner-animation-child-big 2s infinite;
     animation-delay: 0.5s;
@@ -579,4 +580,59 @@ footer {
     }
 }
 //footer component syling
+
+// language choice button on navigation styling
+.container-shape-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container-shape {
+    margin: auto;
+    text-align: center; 
+    width: 940px;
+}
+
+.diamond-shape {  
+    background: #fff;
+    height: 50px;
+    text-align: center;
+    transform:rotate(45deg);
+    background-color: $z-black-lighter;
+    width:50px;
+    margin-left: 1rem;
+}
+
+@media (max-width: 1023px ) {
+    .diamond-shape {
+        margin: 0 auto 1rem;
+    }   
+}
+
+.language-name {
+    a {
+        color: $z-yellow;
+        font-weight: bold;
+    }
+    display: table-cell;
+    height: 50px;
+    transform: rotate(-45deg);
+    vertical-align: middle;
+    width:50px;
+}
+// language choice button on navigation styling
+
+// welcome title on preloader styling
+.welcome-title {
+    color: $z-white-like;
+    span {
+        color: $z-yellow;
+    }
+    font-family: $z-brand-font;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 2rem 1rem;
+}
+// welcome title on preloader styling
   

@@ -1,14 +1,25 @@
+import { useContext } from "react";
 import { Link } from "react-scroll"
+import LanguageContext from "./languageContext";
 
 function toggleBurger() {
-    const navbarBurger = document.getElementsByClassName("navbar-burger")[0];
-    const navbarMenu = document.getElementsByClassName("navbar-menu")[0];
-  
-    navbarBurger.classList.toggle("is-active");
-    navbarMenu.classList.toggle("is-active");
-  }
+  const navbarBurger = document.getElementsByClassName("navbar-burger")[0];
+  const navbarMenu = document.getElementsByClassName("navbar-menu")[0];
+
+  navbarBurger.classList.toggle("is-active");
+  navbarMenu.classList.toggle("is-active");
+}
+
+function getAbbvr(languageName) {
+  if(languageName == "english") { return "TR"; }
+  else if(languageName == "turkish") { return "EN"; }
+  else { return "UNDEF"; }
+}
 
 export default function Navigation() {
+    const { currentLanguage, setCurrentLanguage } =  useContext(LanguageContext);
+    console.log(currentLanguage);
+
     return (
         <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
           <div className="container">
@@ -67,8 +78,24 @@ export default function Navigation() {
                   duration={500} onClick={() => toggleBurger()}> 
                     Contact 
                 </Link>
+
+                <div className="container-shape-wrapper">
+                  <div className="container-shape diamond-shape">
+                    <div className="language-name">
+                      <a onClick={() => {
+                        if(currentLanguage == "english") {
+                          setCurrentLanguage("turkish");
+                        } else {
+                          setCurrentLanguage("english");
+                        }
+                      }}>
+                        {getAbbvr(currentLanguage)}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
               </div>
-    
             </div>
           </div>
         </nav>

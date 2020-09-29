@@ -9,10 +9,10 @@ export default function About() {
                         <br />
                         <p className="subtitle"> 
                             Zeytun ABC LTD provides accounting, bookkeeping and consultancy services 
-                            for the formal grown-up businesses and the self employed individuals in London, United Kingdom.
+                            for the grown-up businesses and the self employed individuals in London, United Kingdom.
                             We use various analyzation techniques and provide different aspects for financial data to be the most reliable and convenient for the clients.
                             <br /><br />Prioritising clients' needs with being highly reliable & convenient is our first way of helping people.
-                            We take pride of being formal AAT member and formal partner of Edge Chartered Certified Accountants.
+                            We take pride of being AAT member and partner of Edge Chartered Certified Accountants.
                             Zeytun ABC also provides services like corporation tax, self assessment, value added tax(VAT) and capital gains tax(CGT).
                         </p>
                         <br />
