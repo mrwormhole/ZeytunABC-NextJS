@@ -271,6 +271,7 @@ $footer-padding: 3rem 1rem 3rem 1rem;
       margin-top: 2rem;
       color:  $z-yellow;
       font-family: $z-content-font;
+      font-weight: lighter;
     }
   }
   //introduction component styling
@@ -441,21 +442,28 @@ $footer-padding: 3rem 1rem 3rem 1rem;
 #certification {
     background-color: $z-white-darker;
 
-    .aat-title {
+    .title {
         font-size: 2rem;
-        font-weight: bold;
+        color: $z-black-lighter;
         font-family: $z-content-font;
-        margin-bottom: 0.25rem;
-        color: #00AB4E;
-    }
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        line-height: 1.25;
+        word-break: break-word;
+        font-weight: lighter;
+      }
 
-    .ea-title {
-        font-size: 2rem;
-        font-weight: bold;
-        font-family: $z-content-font;
-        margin-bottom: 0.25rem;
-        color: #023E86;
-    }
+      .certification-logo-image-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          div {
+              margin-top: 1rem;
+          }
+      }
 }
 //certification component styling
 
