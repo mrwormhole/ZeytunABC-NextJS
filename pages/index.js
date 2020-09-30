@@ -11,7 +11,7 @@ import About from "../components/about";
 import Services from '../components/services';
 import Certification from '../components/certification';
 import Achievements from '../components/achievements';
-import Contact from '../components/contact';
+import ContactForm from '../components/contactForm';
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -57,7 +57,7 @@ export default function HomePage() {
         <Services />
         <Achievements />
         <About />
-        <Contact />
+        <ContactForm />
       </main>
       <FloatingActionButton />
       <Footer /> 

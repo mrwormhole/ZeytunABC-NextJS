@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalculator, faBook, faEnvelopeOpenText, faChartLine, faPenFancy, faBriefcase, faTasks, faBuilding, faUsers, faUserTie, faFileInvoiceDollar, faFileInvoice } from '@fortawesome/free-solid-svg-icons'
-import { faLine } from '@fortawesome/free-brands-svg-icons';
 //import ServiceCard from './serviceCard'
 
 export default function Services() {

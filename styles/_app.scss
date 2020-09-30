@@ -80,7 +80,7 @@ $footer-padding: 3rem 1rem 3rem 1rem;
 }
 //navigation component styling
 
-// preloader component styling
+//preloader component styling
 .preloader-overlay {
     height: 100%;
     position: fixed;
@@ -225,7 +225,7 @@ $footer-padding: 3rem 1rem 3rem 1rem;
         transform: scale(0.5);
     }
 }
-// preloader component styling
+//preloader component styling
 
 //floating action button component styling
 .floating-action-button {
@@ -273,10 +273,10 @@ $footer-padding: 3rem 1rem 3rem 1rem;
       font-family: $z-content-font;
       font-weight: lighter;
     }
-  }
-  //introduction component styling
+}
+//introduction component styling
 
-  //about component styling
+//about component styling
 #about {
     background-color: $z-black-lighter;
     background-image: url("../public/pattern.jpg");
@@ -295,10 +295,10 @@ $footer-padding: 3rem 1rem 3rem 1rem;
       font-family: $z-content-font;
       line-height: 2.5rem;
     }
-  }
-  //about component styling
+}
+//about component styling
 
-  //service card component styling
+//service card component styling
 #service-card {
     padding: 1rem; 
     height: 100%;
@@ -383,9 +383,9 @@ $footer-padding: 3rem 1rem 3rem 1rem;
         align-items: center;
     }
   }
-  //service card component styling
+//service card component styling
 
-  //services component styling
+//services component styling
 #services {
     background-color: #fff;
     .title {
@@ -505,89 +505,6 @@ $footer-padding: 3rem 1rem 3rem 1rem;
 }
 //achievements component syling
 
-//contact component styling
-#contact {
-    background-color: $z-white-like;
-    .contact-form {
-        background-color: $z-orange;
-        border-radius: 40px;
-        box-sizing: border-box;
-        margin: 0 20px 0 0;
-    }
-
-    .contact-card {
-        background-color: $z-red;
-        border-radius: 40px;
-        box-sizing: border-box;
-        margin: 0 20px 0 0;
-    } 
-
-    .title {
-        font-size: 3rem;
-        margin-bottom: 3rem;
-        color: $z-black-lighter;
-        font-family: $z-header-font;
-        text-align: center;
-    }
-
-    .small-title {
-        font-family: $z-content-font;
-        color: $z-white-like;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-
-    .notification {
-        display: none;
-    }
-
-    h5 {
-        font-family: $z-content-font;
-        color: $z-white-like;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .iframe-holder {
-        margin-top: 0.5rem;
-        height: 385px;
-    }
-
-    form {
-        label {
-            font-family: $z-content-font, serif;
-            color: $z-white-like;
-            font-size: 1rem;
-        }
-        button {
-            border: 2px solid white;
-            align-items: center;
-            width: 60%;
-        }
-    }
-
-    .columns {
-        margin-right: 0 !important
-    }
-
-}
-
-@media (max-width: 768px) {
-    .iframe-holder {
-        height: auto !important;
-    }
-
-    .contact-form {
-        margin: 20px 0 0 0 !important;
-    }
-
-    .contact-card {
-        margin: 0 0 0 0 !important;
-    }
-
-}
-//contact component styling
 
 //footer component syling
 footer {
@@ -600,7 +517,7 @@ footer {
 }
 //footer component syling
 
-// language choice button on navigation styling
+//language choice button on navigation styling
 .container-shape-wrapper {
     display: flex;
     justify-content: center;
@@ -639,9 +556,9 @@ footer {
     vertical-align: middle;
     width:50px;
 }
-// language choice button on navigation styling
+//language choice button on navigation styling
 
-// welcome title on preloader styling
+//welcome title on preloader styling
 .welcome-title {
     color: $z-white-like;
     span {
@@ -654,4 +571,106 @@ footer {
     padding: 2rem 1rem;
 }
 // welcome title on preloader styling
+
+// contact form component styling
+#contact {
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+
+    @mixin clearfix {
+        &:after {
+           content: "";
+           display: table;
+           clear: both;
+       }
+     }
+     
+    .row {
+        @include clearfix;
+        margin: -20px 0;
+        .col {
+           padding: 0 20px;
+           float: left;
+           box-sizing: border-box;
+           &.x-50 {
+              width: 50%;
+           }
+           &.x-100 {
+              width: 100%;
+           }
+        }
+     }
+
+    .title {
+        text-align: center;
+        font-family: $z-content-font;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 2.5rem;
+        line-height: 48px;
+        padding-bottom: 48px;
+    }
+
+    .notification {
+        display: none;
+    }
+
+    .form-field {
+        position: relative;
+        margin: 2rem 0;
+    }
+    
+    .input-text {
+        display: block;
+        width: 100%;
+        height: 36px;
+        border-width: 0 0 2px 0;
+        border-color: $z-black-pure;
+        font-family: $z-content-font;
+        font-size: 1.2rem;
+        line-height: 26px;
+        font-weight: 400;
+        
+        &:focus {
+            outline: none;
+        }
+        
+        &:focus,
+        &.not-empty {
+            + .label {
+                transform: translateY(-24px);
+            }
+        }
+    }
+
+    .label {
+        position: absolute;
+        left: 20px;
+        bottom: 11px;
+        font-family: $z-content-font;
+        font-size: 1.2rem;
+        line-height: 26px;
+        font-weight: 400;
+        color: #888;
+        cursor: text;
+        transition: transform .2s ease-in-out;
+    }
+
+    .submit-button {
+        display: inline-block;
+        background-color: $z-black-pure ;
+        color: $z-white-like;
+        font-family: $z-content-font;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+    }
+}
+ //contact form component styling
   

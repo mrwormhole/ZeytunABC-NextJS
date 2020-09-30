@@ -3,15 +3,14 @@ import sendGrid from "@sendgrid/mail"
 export default async (req, res) => {
     if (req.method === "POST") {
         sendGrid.setApiKey(process.env.SENDGRID_API_KEY);
-        const {fullName, email, phoneNumber, subject, message} = req.body;
+        const {fullName, email, message} = req.body;
         
         const mailData = {
             to: "info@zeytunabc.com",
             from: email,
-            subject: `${subject} | New message from a Client`,
+            subject: `New message from a Client`,
             html: `<strong> Hello Zeytun ABC LTD! </strong> 
-            <p> I am ${fullName} . ${message} </p>
-            <p> My telephone number is ${phoneNumber} </p>`
+            <p> I am ${fullName} . ${message} </p>`
         };
 
         let sendGridResult = await sendGrid.send(mailData)
