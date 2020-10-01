@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import { useState, useEffect } from 'react';
+import { useEffect, useContext } from 'react';
 
-import Preloader from '../components/preloader'
+import LoadingContext from "../components/loadingContext";
+import Preloader from '../components/preloader';
 import Navigation from '../components/navigation';
 import FloatingActionButton from "../components/floatingActionButton";
 
@@ -14,7 +15,7 @@ import Achievements from '../components/achievements';
 import ContactForm from '../components/contactForm';
 
 export default function HomePage() {
-  const [isLoading, setIsLoading] = useState(true);
+  const { isLoading, setIsLoading } = useContext(LoadingContext);
 
   useEffect(() => {
     setTimeout(() => { 

@@ -230,7 +230,7 @@ $footer-padding: 3rem 1rem 3rem 1rem;
 //floating action button component styling
 .floating-action-button {
     position: fixed;
-    background: $z-yellow;
+    background: $z-orange;
     color: $z-white-like;
     text-align: center;
     font-size: 16px;
@@ -240,9 +240,9 @@ $footer-padding: 3rem 1rem 3rem 1rem;
     z-index: 11;
 
     &:hover {
-        color:  $z-yellow;
+        color:  $z-orange;
         background: $z-white-like;
-        border: 1px solid $z-yellow;
+        border: 1px solid $z-orange;
     }
 }
 //floating action button component styling
@@ -570,9 +570,10 @@ footer {
     margin-top: 1rem;
     padding: 2rem 1rem;
 }
-// welcome title on preloader styling
+//welcome title on preloader styling
 
-// contact form component styling
+//contact form component styling
+//Kudos to Aina Requena from Berlin
 #contact {
     max-width: 650px;
     margin: 0 auto;
@@ -660,7 +661,7 @@ footer {
 
     .submit-button {
         display: inline-block;
-        background-color: $z-black-pure ;
+        background-color: $z-orange;
         color: $z-white-like;
         font-family: $z-content-font;
         text-transform: uppercase;
@@ -669,8 +670,67 @@ footer {
         line-height: 1.5rem;
         padding: 0.5rem 1rem;
         border: none;
+        border-radius: 20px;
         cursor: pointer;
     }
 }
  //contact form component styling
+
+ //contact page styling
+ .banner {
+    background-image: url("../public/pattern.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding: 1.5em 2.5em;
+    margin-bottom: 2rem;
+    h1 {
+        text-align: center;
+        font-weight: 100;
+        font-size: 3rem;
+        border-bottom: 1px solid $z-yellow;
+        margin: 0 0 0.1em 0;
+        padding: 0 0 0.4em 0;
+        color: $z-yellow;
+        width: 70%;
+        margin: auto;
+    }
+    h3 {
+        text-align: center;
+        font-size: 2rem;
+        margin: 1em 0 0.4em 0;
+        color: $z-white-like;
+    }
+
+}
+
+.contact-card {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    border: 2px solid #ccc;
+    background-image: url("../public/pattern.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+    label {
+        color: white;
+    }
+
+    button {
+        margin-top: 1rem;
+        background-color: $z-orange;
+        border: 0px solid white;
+        color: $z-white-like;
+        text-transform: uppercase;
+        font-family: $z-content-font;
+        font-size: 1rem;
+        border-radius: 20px;
+
+        &:hover {
+            background-color: $z-orange;
+            color: $z-white-like;
+        }
+    }
+}
+ //contact page styling
+
   

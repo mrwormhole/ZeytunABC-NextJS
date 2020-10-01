@@ -1,4 +1,4 @@
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Certification() {
@@ -7,10 +7,10 @@ export default function Certification() {
             <div className="columns is-centered is-vcentered">
                 <div className="column is-8">
                 <h2 className="title">
-                    Providing solutions with Business Specialists (PhD), 
+                    <FontAwesomeIcon className="tick-icon" icon={faCheckSquare} /> Providing solutions with Business Specialists (PhD), 
                     Certified Chartered Accountants (ACCA, FCCA) and Qualified Bookkeepers (AAT)
                     <br /> <br />
-                    <FontAwesomeIcon className="tick-icon" icon={faCheckCircle} /> Registered to Information Commissioner's Office (ICO)
+                    <FontAwesomeIcon className="tick-icon" icon={faCheckSquare} /> Registered to Information Commissioner's Office (ICO)
                 </h2>
                 </div>
                 <div className="column is-2">
