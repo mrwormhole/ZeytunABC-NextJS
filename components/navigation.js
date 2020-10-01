@@ -29,8 +29,8 @@ export default function Navigation() {
     }
     
     if(path == "contact") {
-      var links = document.getElementsByTagName("a");
-      links[5].classList.add("is-active");
+      //var links = document.getElementsByTagName("a");
+      //links[5].classList.add("is-active");
       return (
         <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
           <div className="container">
@@ -63,7 +63,7 @@ export default function Navigation() {
                   <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "About" : "Hakkında"}</a>
                 </Link>
                 <Link href="/contact">
-                  <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "Contact" : "İletişim"}</a>
+                  <a className="navbar-item navbar-item-hoverable is-active">{currentLanguage == "english" ? "Contact" : "İletişim"}</a>
                 </Link>
                 
 
