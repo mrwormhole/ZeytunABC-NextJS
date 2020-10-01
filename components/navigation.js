@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link as ScrollerLink} from "react-scroll";
 import Link from 'next/link';
 import LanguageContext from "./languageContext";
@@ -20,8 +20,17 @@ function getAbbvr(languageName) {
 export default function Navigation() {
     const { currentLanguage, setCurrentLanguage } =  useContext(LanguageContext);
     console.log(currentLanguage);
+    var path = "";
 
-    if(window.location.pathname == "/contact") {
+    if (typeof window !== `undefined`) {
+      console.log(window.location.href);
+      var pathArray = window.location.href.split("/");
+      path = pathArray[pathArray.length-1];
+    }
+    
+    if(path == "contact") {
+      var links = document.getElementsByTagName("a");
+      links[5].classList.add("is-active");
       return (
         <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
           <div className="container">
@@ -54,7 +63,7 @@ export default function Navigation() {
                   <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "About" : "Hakkında"}</a>
                 </Link>
                 <Link href="/contact">
-                  <a className="navbar-item navbar-item-hoverable is-active">{currentLanguage == "english" ? "Contact" : "İletişim"}</a>
+                  <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "Contact" : "İletişim"}</a>
                 </Link>
                 
 
