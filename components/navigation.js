@@ -19,18 +19,14 @@ function getAbbvr(languageName) {
 
 export default function Navigation() {
     const { currentLanguage, setCurrentLanguage } =  useContext(LanguageContext);
-    console.log(currentLanguage);
     var path = "";
 
     if (typeof window !== `undefined`) {
-      console.log(window.location.href);
       var pathArray = window.location.href.split("/");
       path = pathArray[pathArray.length-1];
     }
     
     if(path == "contact") {
-      //var links = document.getElementsByTagName("a");
-      //links[5].classList.add("is-active");
       return (
         <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
           <div className="container">

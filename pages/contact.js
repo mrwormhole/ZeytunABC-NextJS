@@ -4,6 +4,7 @@ import Navigation from '../components/navigation';
 import FloatingActionButton from "../components/floatingActionButton";
 
 import Footer from "../components/footer";
+import ContactCardForm from '../components/contactCardForm';
 
 export default function Contact() {
   
@@ -31,53 +32,7 @@ export default function Contact() {
   
         <Navigation />
         <main>
-          <section className="section container contact-card">
-          <div className="banner">
-            <h1>CONTACT US</h1>
-            <h3>Fill out the form below to learn more!</h3>
-          </div>
-          
-          <label className="label paint-label-white">Personal Details</label>
-          <div className="field is-grouped mt-5">
-    
-          
-            <div className="control is-expanded">
-              <input className="input" type="text" placeholder="Name" />
-            </div>
-        
-            <div className="control is-expanded">
-              <input className="input" type="text" placeholder="Phone Number" />
-            </div>
-
-          </div>
-
-          <div className="field is-grouped mt-5">
-
-            <div className="control is-expanded">
-              <input className="input" type="email" placeholder="Email" />
-
-            </div>
-
-            <div className="control is-expanded">
-              <input className="input" type="text" placeholder="Subject" />
-            </div>         
-
-          </div>
-
-          <div className="field mt-5">
-            <label className="label paint-label-white mb-5">Message</label>
-            <div className="control">
-              <textarea className="textarea" placeholder="Your Message"></textarea>
-            </div>
-          </div>
-
-
-          <div className="field is-grouped is-grouped-centered">
-            <div className="control">
-              <button className="button is-medium">Submit</button>
-            </div>
-          </div>
-        </section>
+          <ContactCardForm />
         </main>
         <FloatingActionButton />
         <Footer /> 
