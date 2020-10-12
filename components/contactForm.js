@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
+import LanguageContext from './languageContext';
 
 function isFormEmpty(data) {
     if (data.email.trim() == "" ||  data.fullName.trim() == "" ||
@@ -36,52 +37,101 @@ function listenForKeyUp() {
 }
 
 export default function ContactForm() {
+    const {currentLanguage} = useContext(LanguageContext)
+
     useEffect(() => {
         listenForKeyUp();
     }, [])
     
-    return (
-        <section className="section" id="contact">
-            <h1 className="title">Get in touch</h1>
-            <form className="row" onSubmit={(e) => {
-                e.preventDefault();
-                const [name, email, message] = e.target.elements;
-                const data = {
-                    fullName: name.value,
-                    email: email.value,
-                    message: message.value
-                };
-
-                if(!isFormEmpty(data)) {
-                    fetch("/api/email", {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(data)
-                    });
-                    resetFormValues(e);
-                    showSuccess();
-                } 
-            }}>
-                <div className="notification is-success is-light">
-                    Your message is sent! We will be contacting <strong>you</strong> shortly in the mean time!
-                </div>
-
-                <div className="form-field col x-50">
-                    <input id="name" className="input-text contact-form-input" required />
-                    <label className="label" htmlFor="name">Name</label>
-                </div>
-                <div className="form-field col x-50">
-                    <input id="email" className="input-text contact-form-input" type="email" required />
-                    <label className="label" htmlFor="email">E-mail</label>
-                </div>
-                <div className="form-field col x-100">
-                    <input id="message" className="input-text contact-form-input" type="text" required />
-                    <label className="label" htmlFor="message">Message</label>
-                </div>
-                <div className="form-field col x-100 has-text-centered">
-                    <button className="submit-button" type="submit" name="action">SUBMIT</button>
-                </div>
-            </form>
-        </section>
-    );
+    if (currentLanguage == "english") {
+        return (
+            <section className="section" id="contact">
+                <h1 className="title">Get in touch</h1>
+                <form className="row" onSubmit={(e) => {
+                    e.preventDefault();
+                    const [name, email, message] = e.target.elements;
+                    const data = {
+                        fullName: name.value,
+                        email: email.value,
+                        message: message.value
+                    };
+    
+                    if(!isFormEmpty(data)) {
+                        fetch("/api/email", {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(data)
+                        });
+                        resetFormValues(e);
+                        showSuccess();
+                    } 
+                }}>
+                    <div className="notification is-success is-light">
+                        Your message is sent! We will be contacting <strong>you</strong> shortly in the mean time!
+                    </div>
+    
+                    <div className="form-field col x-50">
+                        <input id="name" className="input-text contact-form-input" required />
+                        <label className="label" htmlFor="name">Name</label>
+                    </div>
+                    <div className="form-field col x-50">
+                        <input id="email" className="input-text contact-form-input" type="email" required />
+                        <label className="label" htmlFor="email">E-mail</label>
+                    </div>
+                    <div className="form-field col x-100">
+                        <input id="message" className="input-text contact-form-input" type="text" required />
+                        <label className="label" htmlFor="message">Message</label>
+                    </div>
+                    <div className="form-field col x-100 has-text-centered">
+                        <button className="submit-button" type="submit" name="action">SUBMIT</button>
+                    </div>
+                </form>
+            </section>
+        );
+    } else {
+        return (
+            <section className="section" id="contact">
+                <h1 className="title">Bize Ulaşın</h1>
+                <form className="row" onSubmit={(e) => {
+                    e.preventDefault();
+                    const [name, email, message] = e.target.elements;
+                    const data = {
+                        fullName: name.value,
+                        email: email.value,
+                        message: message.value
+                    };
+    
+                    if(!isFormEmpty(data)) {
+                        fetch("/api/email", {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(data)
+                        });
+                        resetFormValues(e);
+                        showSuccess();
+                    } 
+                }}>
+                    <div className="notification is-success is-light">
+                        Mesajınız gönderildi! Bu arada kısa süre içinde <strong> sizinle </strong> iletişime geçeceğiz!
+                    </div>
+    
+                    <div className="form-field col x-50">
+                        <input id="name" className="input-text contact-form-input" required />
+                        <label className="label" htmlFor="name">İsminiz</label>
+                    </div>
+                    <div className="form-field col x-50">
+                        <input id="email" className="input-text contact-form-input" type="email" required />
+                        <label className="label" htmlFor="email">E-mail</label>
+                    </div>
+                    <div className="form-field col x-100">
+                        <input id="message" className="input-text contact-form-input" type="text" required />
+                        <label className="label" htmlFor="message">Mesaj</label>
+                    </div>
+                    <div className="form-field col x-100 has-text-centered">
+                        <button className="submit-button" type="submit" name="action">GÖNDER</button>
+                    </div>
+                </form>
+            </section>
+        );
+    }
 }

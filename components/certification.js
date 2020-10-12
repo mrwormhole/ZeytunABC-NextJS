@@ -1,16 +1,27 @@
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useContext } from 'react';
+import LanguageContext from './languageContext';
 
 export default function Certification() {
+    const {currentLanguage} = useContext(LanguageContext);
+
     return (
         <section className="section" id="certification">
             <div className="columns is-centered is-vcentered">
                 <div className="column is-8">
                 <h2 className="title">
-                    <FontAwesomeIcon className="tick-icon" icon={faCheckSquare} /> Providing solutions with Business Specialists (PhD), 
-                    Certified Chartered Accountants (ACCA, FCCA) and Qualified Bookkeepers (AAT)
+                    <FontAwesomeIcon className="tick-icon" icon={faCheckSquare} /> 
+                    {currentLanguage == "english" ? 
+                        " Providing solutions with Business Specialists (PhD), Certified Chartered Accountants (ACCA, FCCA) and Qualified Bookkeepers (AAT)" : 
+                        " İşletme Uzmanları (Doktora), Sertifikalı Yeminli Muhasebeciler (ACCA, FCCA) ve Nitelikli Muhasebeciler (AAT) ile çözümler sunmaya devam ediyoruz"
+                    }
                     <br /> <br />
-                    <FontAwesomeIcon className="tick-icon" icon={faCheckSquare} /> Registered to Information Commissioner's Office (ICO)
+                    <FontAwesomeIcon className="tick-icon" icon={faCheckSquare} />
+                    {currentLanguage == "english" ?
+                        " Registered to Information Commissioner's Office (ICO)" :
+                        " Bilgi Komiserliği Ofisine (ICO) kayıtlı"
+                    }
                 </h2>
                 </div>
                 <div className="column is-2">

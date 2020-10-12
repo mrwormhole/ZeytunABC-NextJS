@@ -1,15 +1,19 @@
-import { Link } from "react-scroll";
+import { useContext } from "react";
+import { Link as ScrollerLink } from "react-scroll";
+import Header from "./header";
+
+import LanguageContext from "./languageContext";
 
 export default function Introduction() {
+    const { currentLanguage } =  useContext(LanguageContext);
+    
     return (
         <section className="section is-paddingless" id="home">
             <div className="hero is-fullheight-with-navbar has-background-pattern">
                 <div className="hero-body">
                     <div className="columns">
                     <div className="column is-8 is-offset-2" >
-                        <h1 className="title"> We provide perfect solutions for businesses and self employed individuals who need <span>convenient and reliable</span> accountancy services</h1>
-                        <br />
-                        <h2 className="subtitle"> Specialized in Accounting, Bookkeeping and Consultancy Services </h2>
+                        <Header />
                         
                         {/*<div className="buttons has-addons is-left">
                         <Link className="button is-primary is-rounded is-medium" style={{width: "50%"}}

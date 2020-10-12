@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { Link as ScrollerLink} from "react-scroll";
 import Link from 'next/link';
 import LanguageContext from "./languageContext";
