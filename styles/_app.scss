@@ -703,13 +703,17 @@ footer {
 
 }
 
+@mixin has-background-pattern {
+    background-image: url("../public/pattern.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
 .contact-card {
     margin-top: 8rem;
     margin-bottom: 5rem;
     border: 2px solid #ccc;
-    background-image: url("../public/pattern.jpg");
-    background-repeat: repeat;
-    background-attachment: fixed;
+    @include has-background-pattern;
 
     label {
         color: white;
@@ -731,6 +735,18 @@ footer {
         }
     }
 }
- //contact page styling
+//contact page styling
+
+//services page styling
+.services-hero {
+    margin-top: 6rem;
+    @include has-background-pattern;
+
+    .title {
+        color: $z-yellow !important;
+        font-size: 3rem !important;
+    }
+}
+//services page styling
 
   

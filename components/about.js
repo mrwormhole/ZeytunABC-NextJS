@@ -40,7 +40,7 @@ export default function About() {
             <section className="section is-medium" id="about">
                     <div className="columns">
                         <div className="column is-6 is-offset-3">
-                            <h2 className="title"> About Us </h2>
+                            <h2 className="title"> Hakkımızda </h2>
                             <br />
                             <p className="subtitle"> 
                             ZEYTUN ABC, Birleşik Krallık’ta yerleşik olan veya yeni kurulacak işletmeler için muhasebe ve danışmanlık hizmetleri vermektedir.

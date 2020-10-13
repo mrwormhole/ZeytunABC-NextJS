@@ -1,12 +1,30 @@
+import { useRouter } from "next/router";
 import Head from 'next/head'
 
-import Navigation from '../components/navigation';
-import FloatingActionButton from "../components/floatingActionButton";
-import Footer from "../components/footer";
-import ContactCardForm from '../components/contactCardForm';
+import Navigation from '../../components/navigation';
+import FloatingActionButton from "../../components/floatingActionButton";
+import Footer from "../../components/footer";
+import { useContext, useEffect } from "react";
+import LanguageContext from "../../components/languageContext";
 
-export default function Contact() {
-  
+export default function Service() {
+    const router = useRouter();
+    var slugName = "";
+    if (typeof window !== `undefined`) {
+      var pathArray = window.location.href.split("/");
+      slugName = pathArray[pathArray.length-1];
+    }
+    let serviceNameSlugs = ["ankara-agreement", "company-formation", "address-services", "bookkeeping", "tax-services", "year-end-accounts", 
+                      "payroll", "vat-returns", "start-up-support", "business-consultancy", "management-accounts", "audit"];
+
+    useEffect(() => {
+      console.log("val", serviceNameSlugs.includes(slugName));
+      if (!(serviceNameSlugs.includes(slugName))) {
+        router.push("/");
+      }
+    }, []);
+    
+
     return (
       <React.Fragment>
   
@@ -26,17 +44,26 @@ export default function Contact() {
           <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-          <link rel="manifest" href="site.webmanifest" />
+          <link rel="manifest" href="../site.webmanifest" />
         </Head>
   
-        <Navigation onPage="contact"/>
+        <Navigation onPage="services" />
         <main>
-          <ContactCardForm />
+          <section className="hero is-primary has-background-pattern services-hero">
+            <div className="hero-body">
+              <div className="container">
+                <h1 className="title has-text-centered">
+                  Primary title
+                </h1>
+              </div>
+            </div>
+          </section>
+
+
         </main>
         <FloatingActionButton />
         <Footer /> 
   
       </React.Fragment>
     );
-  }
-  
+}

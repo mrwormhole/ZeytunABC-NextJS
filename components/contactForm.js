@@ -91,7 +91,7 @@ export default function ContactForm() {
     } else {
         return (
             <section className="section" id="contact">
-                <h1 className="title">Bize Ulaşın</h1>
+                <h1 className="title">Bİze Ulaşın</h1>
                 <form className="row" onSubmit={(e) => {
                     e.preventDefault();
                     const [name, email, message] = e.target.elements;

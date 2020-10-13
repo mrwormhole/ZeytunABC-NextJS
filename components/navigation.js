@@ -17,16 +17,16 @@ function getAbbvr(languageName) {
   else { return "UNDEF"; }
 }
 
-export default function Navigation() {
+export default function Navigation(props) {
     const { currentLanguage, setCurrentLanguage } =  useContext(LanguageContext);
-    var path = "";
+    //var path = "";
 
-    if (typeof window !== `undefined`) {
-      var pathArray = window.location.href.split("/");
-      path = pathArray[pathArray.length-1];
-    }
+    //if (typeof window !== `undefined`) {
+    //  var pathArray = window.location.href.split("/");
+    //  path = pathArray[pathArray.length-1];
+    //}
     
-    if(path == "contact") {
+    if(props.onPage == "contact" || props.onPage == "services") {
       return (
         <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
           <div className="container">
