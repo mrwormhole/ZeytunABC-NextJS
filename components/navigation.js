@@ -31,9 +31,11 @@ export default function Navigation(props) {
         <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
           <div className="container">
             <div className="navbar-brand">
-              <a href="/" className="navbar-item">
-                <img src="/logo.png" alt="Zeytun ABC logo"/>
-              </a>
+              <Link href="/">
+                <a className="navbar-item">
+                  <img src="/logo.png" alt="Zeytun ABC logo"/>
+                </a>
+              </Link>
     
               <a role="button" 
                 className="navbar-burger burger" 
@@ -49,7 +51,7 @@ export default function Navigation(props) {
     
             <div id="navbarBasicExample" className="navbar-menu"> 
               <div className="navbar-end">
-              <Link href="/">
+                <Link href="/">
                   <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "Home" : "Anasayfa"}</a>
                 </Link>
                 <Link href="/">
@@ -89,9 +91,11 @@ export default function Navigation(props) {
         <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
           <div className="container">
             <div className="navbar-brand">
-              <a href="/" className="navbar-item">
-                <img src="/logo.png" alt="Zeytun ABC logo"/>
-              </a>
+              <Link href="/">
+                <a className="navbar-item">
+                  <img src="/logo.png" alt="Zeytun ABC logo"/>
+                </a>
+              </Link>
     
               <a role="button" 
                 className="navbar-burger burger" 

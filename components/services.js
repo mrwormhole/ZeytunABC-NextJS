@@ -3,17 +3,11 @@ import { faCalculator, faBook, faEnvelopeOpenText, faChartLine, faPenFancy, faBr
 import { useContext } from 'react';
 import LanguageContext from './languageContext';
 //import ServiceCard from './serviceCard'
+import { serviceNames } from "../constants/serviceConstants";
+import Link from 'next/link';
 
 export default function Services() {
     const { currentLanguage } = useContext(LanguageContext);
-    let serviceNames;
-    if (currentLanguage == "english") {
-        serviceNames = ["Ankara Agreement", "Company Formation", "Address Services", "Bookkeeping", "Tax Services", "Year-End Accounts", 
-                        "Payroll(PAYE)", "VAT Returns", "Start-up Support", "Business Consultancy", "Management Accounts", "Audit"];
-    } else {
-        serviceNames = ["Ankara Anlamaşması", "Şirket Kurulumu", "Adres Servisi", "Ön Muhasebe İşlemleri", "Vergi İşlemleri", "Dönem Sonu Muhasebe İşlemleri",
-                        ];
-    }
     
     /*
     return (
@@ -57,64 +51,77 @@ export default function Services() {
 
             <div className="columns is-centered is-vcentered mt-5">
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <a href="/services/test">
-                        <FontAwesomeIcon className="category-icon" icon={faUsers} />
-                        <h2>{serviceNames[0]}</h2>
-                    </a>
+                    <Link href="/services/ankara-agreement">
+                        <a className="service-box-cover-link" />
+                    </Link>
+                    <FontAwesomeIcon className="category-icon" icon={faUsers} />
+                    <h2>{currentLanguage == "english" ? serviceNames["english"][0] : serviceNames["turkish"][0]}</h2>
+                    
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
+                    <a href="/services/company-formation" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faPenFancy} />
-                    <h2>{serviceNames[1]}</h2>
+                    <h2>{currentLanguage == "english" ? serviceNames["english"][1] : serviceNames["turkish"][1]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
+                    <a href="/services/address-services" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faBuilding} />
-                    <h2>{serviceNames[2]}</h2>
+                    <h2>{currentLanguage == "english" ? serviceNames["english"][2] : serviceNames["turkish"][2]}</h2>
                 </div>
             </div>
 
             <div className="columns is-centered mt-2 is-vcentered">
             
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
+                    <a href="/services/bookkeeping" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faBook} />
-                    <h2>{serviceNames[3]}</h2>
+                    <h2>{currentLanguage == "english" ? serviceNames["english"][3] : serviceNames["turkish"][3]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
+                    <a href="/services/tax-services" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faEnvelopeOpenText} />
-                    <h2>{serviceNames[4]}</h2>
+                    <h2>{currentLanguage == "english" ? serviceNames["english"][4] : serviceNames["turkish"][4]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
+                    <a href="/services/year-end-accounts" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faCalculator} /> 
-                    <h2>{serviceNames[5]}</h2>
+                    <h2>{currentLanguage == "english" ? serviceNames["english"][5] : serviceNames["turkish"][5]}</h2>
                 </div>
             </div>
 
             <div className="columns is-centered mt-2 is-vcentered">
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box  mt-2 mx-5">
+                    <a href="/services/test" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faFileInvoiceDollar} />
-                    <h2>{serviceNames[6]}</h2>
+                    <h2>{currentLanguage == "english" ? serviceNames["english"][6] : serviceNames["turkish"][6]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
+                    <a href="/services/test" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faFileInvoice} />
-                    <h2>{serviceNames[7]}</h2>
+                    <h2>{currentLanguage == "english" ? serviceNames["english"][7] : serviceNames["turkish"][7]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
+                    <a href="/services/test" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faChartLine} />
-                    <h2>{serviceNames[8]}</h2>
+                    <h2>{currentLanguage == "english" ? serviceNames["english"][8] : serviceNames["turkish"][8]}</h2>
                 </div>
             </div>
 
             <div className="columns is-centered mt-2 is-vcentered">
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
+                    <a href="/services/test" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faBriefcase} />
-                    <h2>{serviceNames[9]}</h2>
+                    <h2>{currentLanguage == "english" ? serviceNames["english"][9] : serviceNames["turkish"][9]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
+                    <a href="/services/test" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faUserTie} />
-                    <h2>{serviceNames[10]}</h2>
+                    <h2>{currentLanguage == "english" ? serviceNames["english"][10] : serviceNames["turkish"][10]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
+                    <a href="/services/test" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faTasks} />
-                    <h2>{serviceNames[11]}</h2>
+                    <h2>{currentLanguage == "english" ? serviceNames["english"][11] : serviceNames["turkish"][11]}</h2>
                 </div>
             </div>
         </section>

@@ -2,10 +2,8 @@ import { useContext } from "react";
 import { Link as ScrollerLink } from "react-scroll";
 import Header from "./header";
 
-import LanguageContext from "./languageContext";
 
 export default function Introduction() {
-    const { currentLanguage } =  useContext(LanguageContext);
     
     return (
         <section className="section is-paddingless" id="home">

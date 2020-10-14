@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import LanguageContext from "./languageContext";
+
 function isFormEmpty(data) {
     if (data.email.trim() == "" ||  data.fullName.trim() == "" ||
         data.message.trim() == "" || data.subject.trim() == "" || data.phoneNumber.trim() == "") {
@@ -15,6 +18,8 @@ function resetFormValues(e) {
 }
 
 export default function ContactCardForm() {
+    const { currentLanguage } =  useContext(LanguageContext);
+
     return (
         <section className="section container contact-card">
             <form onSubmit={(e) => {

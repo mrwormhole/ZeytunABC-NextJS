@@ -402,6 +402,7 @@ $footer-padding: 3rem 1rem 3rem 1rem;
     .service-box {
         background-color: $z-black-lighter;
         color: $z-white-darker;
+        position: relative;
         svg {
             color: $z-yellow;
             font-size: 3rem !important;
@@ -414,6 +415,15 @@ $footer-padding: 3rem 1rem 3rem 1rem;
         font-family: $z-content-font;
     }
 
+    .service-box-cover-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 @media (max-width: 1382px ) {
@@ -738,6 +748,30 @@ footer {
 //contact page styling
 
 //services page styling
+.services-information {
+    background-color: $z-black-pure !important;
+    border: 10px solid $z-yellow;
+    border-radius: 20px;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+    .title {
+        margin-bottom: 0 !important;
+    }
+
+    h2 {
+        color: $z-yellow !important;
+        font-size: 2rem !important;
+        font-family: $z-header-font !important;
+    }
+
+    h5 {
+        color: $z-white-like !important;
+        line-height: 1.5 !important;
+        letter-spacing: 1px !important;
+        font-weight: 600 !important;
+    }
+}
+
 .services-hero {
     margin-top: 6rem;
     @include has-background-pattern;

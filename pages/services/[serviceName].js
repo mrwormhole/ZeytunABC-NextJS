@@ -6,24 +6,26 @@ import FloatingActionButton from "../../components/floatingActionButton";
 import Footer from "../../components/footer";
 import { useContext, useEffect } from "react";
 import LanguageContext from "../../components/languageContext";
+import ServiceInformation from "../../components/serviceInformation";
+import { serviceNames,serviceNameSlugs, serviceNameContentMap } from "../../constants/serviceConstants";
 
 export default function Service() {
     const router = useRouter();
-    var slugName = "";
+    const { serviceName } = router.query;
+    const { currentLanguage } = useContext(LanguageContext);
+
+    let slugName = "";
     if (typeof window !== `undefined`) {
       var pathArray = window.location.href.split("/");
       slugName = pathArray[pathArray.length-1];
     }
-    let serviceNameSlugs = ["ankara-agreement", "company-formation", "address-services", "bookkeeping", "tax-services", "year-end-accounts", 
-                      "payroll", "vat-returns", "start-up-support", "business-consultancy", "management-accounts", "audit"];
 
     useEffect(() => {
-      console.log("val", serviceNameSlugs.includes(slugName));
+      //console.log("query", router.query[serviceName]);
       if (!(serviceNameSlugs.includes(slugName))) {
         router.push("/");
       }
     }, []);
-    
 
     return (
       <React.Fragment>
@@ -40,7 +42,6 @@ export default function Service() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>Zeytun Accounting</title>
   
-   
           <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -53,13 +54,12 @@ export default function Service() {
             <div className="hero-body">
               <div className="container">
                 <h1 className="title has-text-centered">
-                  Primary title
+                  {currentLanguage == "english" ? serviceNames["english"][serviceNameSlugs.indexOf(slugName)] : serviceNames["turkish"][serviceNameSlugs.indexOf(slugName)]}
                 </h1>
               </div>
             </div>
           </section>
-
-
+          <ServiceInformation imageName={`/${serviceName}.jpg`} serviceContent={serviceNameContentMap["english"][serviceNameSlugs.indexOf(slugName)]} serviceContentTR={serviceNameContentMap["turkish"][serviceNameSlugs.indexOf(slugName)]} />
         </main>
         <FloatingActionButton />
         <Footer /> 
