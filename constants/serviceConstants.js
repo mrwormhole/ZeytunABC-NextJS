@@ -1,7 +1,7 @@
 export const serviceNames = {
     "english": ["Ankara Agreement", "Company Formation", "Address Services", "Bookkeeping", "Tax Services", "Year-End Accounts", 
                 "Payroll & Pensions", "Management Accounts & Audit", "Mortgage & Insurance", "Business Consultancy", "Market Research", "M&A & Due Diligence"],
-    "turkish": ["Ankara Anlamaşması", "Şirket Kurulumu", "Adres Servisi", "Ön Muhasebe İşlemleri", "Vergi İşlemleri", "Dönem Sonu Muhasebe İşlemleri",
+    "turkish": ["Ankara Anlaşması", "Şirket Kurulumu", "Adres Servisi", "Ön Muhasebe İşlemleri", "Vergi İşlemleri", "Dönem Sonu Muhasebe İşlemleri",
                 "Maaş Bordroları & Emeklilik", "Yönetim Muhasebesi & Denetim", "Konut Kredisi & Sigorta", "İşletme Danışmanlığı", "Pazar Araştırması", "Birleşme & Satın Alma"]
 };
 
@@ -44,8 +44,7 @@ export const serviceNameContentMap = {
         ,
         `We help you perform better management, supervision and planning activities with our evaluation, analysis and advice on the performance of your business.
         \nWe introduce experienced advisors with you for more successful business management that will help you deal with financial expertise issues such as cost accounting, financial improvements or highlighting anomalies in your business as well as applying the most appropriate accounting practices and procedures with up to date principles. 
-        \nIn this context, we may provide weekly, monthly, quarterly, annual or customised periodical reports with visually robust and clear reports.
-        \nFurthermore, we provide audit service for your business that sets out the situation of your company and presents a report with advice to comply with the statutory requirements.`   
+        \nIn this context, we may provide weekly, monthly, quarterly, annual or customised periodical reports with visually robust and clear reports. Furthermore, we provide audit service for your business that sets out the situation of your company and presents a report with advice to comply with the statutory requirements.`   
         ,
         `Considering so many options while looking for the most convenient mortgage, you will need and seek professional help. We can refer you to a specialist who will give you advice upon your conditions.
         \nMoreover, we refer you to our business partners for your insurance and protection needs through reaching to a number of policy providers. Furthermore, protection policy gives you the opportunity to spare money for yourself and your family. 
@@ -57,8 +56,7 @@ export const serviceNameContentMap = {
         ,
         `Our tailored market research activities help businesses understand the situation and trends they confront and prospect. 
         \nWe provide bespoke market reports for our clients, on the specific topics they need, upon their request. Throughout our researches we collect data from various sources, namely conducting surveys, observations, and interviews as well as compiling publicly available information and other data that require source subscription.
-        \nWe also prepare our special proactive researches related to several topics, whether on a certain subject or any industry related issues. 
-        \nAdditionally, we provide periodic newsletters on various areas that cover major news and developments in the market.`
+        \nWe also prepare our special proactive researches related to several topics, whether on a certain subject or any industry related issues. Moreover, we provide periodic newsletters on various areas that cover major news and developments in the market.`
         ,
         `It is seen that there are many investment opportunities in the national or international area within the scope of the multinational business approach of our globalizing world. News on company marriage, joint ventures, mergers and acquisition are among the indispensable routine developments of the business world. 
         \nTo this end, we provide consultancy services for individuals or businesses that seek to invest either in the UK or in other countries as well as who are looking for an investor for their companies. 

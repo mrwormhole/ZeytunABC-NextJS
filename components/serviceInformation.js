@@ -7,7 +7,7 @@ export default function ServiceInformation({imageName, serviceContent, serviceCo
     if ( currentLanguage == "english") {
         return (
             <div className="column is-10 is-offset-1 columns services-information">
-                <div className="column is-5 is-offset-1 py-6">
+                <div className="column is-5 is-offset-1 py-6 mt-6">
                     <figure className="image">
                         <img src={imageName} loading="lazy" alt={imageName} />
                     </figure> 

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalculator, faBook, faEnvelopeOpenText, faChartLine, faPenFancy, faBriefcase, faTasks, faBuilding, faUsers, faUserTie, faFileInvoiceDollar, faFileInvoice } from '@fortawesome/free-solid-svg-icons'
+import { faCalculator, faBook, faEnvelopeOpenText, faChartLine, faPenFancy, faBriefcase, faTasks, faBuilding, faUsers, faUserTie, faFileInvoiceDollar, faFileInvoice, faHouseUser } from '@fortawesome/free-solid-svg-icons'
 import { useContext } from 'react';
 import LanguageContext from './languageContext';
 //import ServiceCard from './serviceCard'
@@ -92,17 +92,17 @@ export default function Services() {
             <div className="columns is-centered mt-2 is-vcentered">
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box  mt-2 mx-5">
                     <a href="/services/payroll-pensions" className="service-box-cover-link" />
-                    <FontAwesomeIcon className="category-icon" icon={faFileInvoiceDollar} />
+                    <FontAwesomeIcon className="category-icon" icon={faFileInvoice} />
                     <h2>{currentLanguage == "english" ? serviceNames["english"][6] : serviceNames["turkish"][6]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
                     <a href="/services/management-accounts-audit" className="service-box-cover-link" />
-                    <FontAwesomeIcon className="category-icon" icon={faFileInvoice} />
+                    <FontAwesomeIcon className="category-icon" icon={faUserTie} />
                     <h2>{currentLanguage == "english" ? serviceNames["english"][7] : serviceNames["turkish"][7]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
                     <a href="/services/mortgage-insurance" className="service-box-cover-link" />
-                    <FontAwesomeIcon className="category-icon" icon={faChartLine} />
+                    <FontAwesomeIcon className="category-icon" icon={faHouseUser} />
                     <h2>{currentLanguage == "english" ? serviceNames["english"][8] : serviceNames["turkish"][8]}</h2>
                 </div>
             </div>
@@ -115,7 +115,7 @@ export default function Services() {
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
                     <a href="/services/market-research" className="service-box-cover-link" />
-                    <FontAwesomeIcon className="category-icon" icon={faUserTie} />
+                    <FontAwesomeIcon className="category-icon" icon={faChartLine} />
                     <h2>{currentLanguage == "english" ? serviceNames["english"][10] : serviceNames["turkish"][10]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
