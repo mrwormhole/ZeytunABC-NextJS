@@ -1,7 +1,6 @@
-import { useContext } from "react";
 import { Link as ScrollerLink} from "react-scroll";
 import Link from 'next/link';
-import LanguageContext from "./languageContext";
+import { useCookies } from "react-cookie";
 
 function toggleBurger() {
   const navbarBurger = document.getElementsByClassName("navbar-burger")[0];
@@ -18,7 +17,8 @@ function getAbbvr(languageName) {
 }
 
 export default function Navigation(props) {
-    const { currentLanguage, setCurrentLanguage } =  useContext(LanguageContext);
+    const [cookies, setCookie] = useCookies(["language"]);
+    const currentLanguage = cookies["language"]
     //var path = "";
 
     //if (typeof window !== `undefined`) {
@@ -70,9 +70,9 @@ export default function Navigation(props) {
                     <div className="language-name">
                       <a onClick={() => {
                         if(currentLanguage == "english") {
-                          setCurrentLanguage("turkish");
+                          setCookie("language", "turkish");
                         } else {
-                          setCurrentLanguage("english");
+                          setCookie("language", "english");
                         }
                       }}>
                         {getAbbvr(currentLanguage)}
@@ -130,9 +130,9 @@ export default function Navigation(props) {
                     <div className="language-name">
                       <a onClick={() => {
                         if(currentLanguage == "english") {
-                          setCurrentLanguage("turkish");
+                          setCookie("language", "turkish");
                         } else {
-                          setCurrentLanguage("english");
+                          setCookie("language", "english");
                         }
                       }}>
                         {getAbbvr(currentLanguage)}
@@ -207,9 +207,9 @@ export default function Navigation(props) {
                     <div className="language-name">
                       <a onClick={() => {
                         if(currentLanguage == "english") {
-                          setCurrentLanguage("turkish");
+                          setCookie("language", "turkish");
                         } else {
-                          setCurrentLanguage("english");
+                          setCookie("language", "english");
                         }
                       }}>
                         {getAbbvr(currentLanguage)}

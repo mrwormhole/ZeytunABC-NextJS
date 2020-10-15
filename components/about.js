@@ -1,9 +1,8 @@
-import { useContext } from "react";
-import { Link } from "react-scroll";
-import LanguageContext from "./languageContext";
+import { useCookies } from "react-cookie";
 
 export default function About() {
-    const {currentLanguage} = useContext(LanguageContext);
+    const [cookies] = useCookies(["language"]);
+    const currentLanguage = cookies["language"];
 
     if (currentLanguage == "english") {
         return (

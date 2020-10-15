@@ -1,5 +1,4 @@
-import { useContext } from "react";
-import LanguageContext from "./languageContext";
+import { useCookies } from "react-cookie";
 
 function isFormEmpty(data) {
     if (data.email.trim() == "" ||  data.fullName.trim() == "" ||
@@ -18,7 +17,8 @@ function resetFormValues(e) {
 }
 
 export default function ContactCardForm() {
-    const { currentLanguage } =  useContext(LanguageContext);
+    const [cookies] = useCookies(["language"]);
+    const currentLanguage = cookies["language"];
 
     return (
         <section className="section container contact-card">

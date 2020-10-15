@@ -1,6 +1,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUsers, faBriefcase, faBug, faSmile, faMoneyBill, faMoneyBillWaveAlt, faMoneyBillWave } from '@fortawesome/free-solid-svg-icons'
+import { faUsers, faBriefcase, faSmile, faMoneyBillWave } from '@fortawesome/free-solid-svg-icons'
 
 export default function Achievements() {
     return (

@@ -5,14 +5,17 @@ import Navigation from '../../components/navigation';
 import FloatingActionButton from "../../components/floatingActionButton";
 import Footer from "../../components/footer";
 import { useContext, useEffect } from "react";
-import LanguageContext from "../../components/languageContext";
 import ServiceInformation from "../../components/serviceInformation";
 import { serviceNames,serviceNameSlugs, serviceNameContentMap } from "../../constants/serviceConstants";
+import { useCookies } from "react-cookie";
 
 export default function Service() {
     const router = useRouter();
     const { serviceName } = router.query;
-    const { currentLanguage } = useContext(LanguageContext);
+    const [cookies] = useCookies(["language"]);
+    const currentLanguage = cookies["language"];
+
+    console.log("COOKIES: ", cookies);
 
     let slugName = "";
     if (typeof window !== `undefined`) {

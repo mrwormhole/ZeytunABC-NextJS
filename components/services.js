@@ -1,13 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalculator, faBook, faEnvelopeOpenText, faChartLine, faPenFancy, faBriefcase, faTasks, faBuilding, faUsers, faUserTie, faFileInvoiceDollar, faFileInvoice, faHouseUser } from '@fortawesome/free-solid-svg-icons'
-import { useContext } from 'react';
-import LanguageContext from './languageContext';
+import { faCalculator, faBook, faEnvelopeOpenText, faChartLine, faPenFancy, faBriefcase, faTasks, faBuilding, faUsers, faUserTie, faFileInvoice, faHouseUser } from '@fortawesome/free-solid-svg-icons'
 //import ServiceCard from './serviceCard'
 import { serviceNames } from "../constants/serviceConstants";
 import Link from 'next/link';
+import { useCookies } from "react-cookie";
 
 export default function Services() {
-    const { currentLanguage } = useContext(LanguageContext);
+    const [cookies] = useCookies(["language"]);
+    const currentLanguage = cookies["language"];
     
     /*
     return (

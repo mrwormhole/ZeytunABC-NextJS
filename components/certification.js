@@ -1,10 +1,10 @@
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useContext } from 'react';
-import LanguageContext from './languageContext';
+import { useCookies } from "react-cookie";
 
 export default function Certification() {
-    const {currentLanguage} = useContext(LanguageContext);
+    const [cookies] = useCookies(["language"]);
+    const currentLanguage = cookies["language"];
 
     return (
         <section className="section" id="certification">

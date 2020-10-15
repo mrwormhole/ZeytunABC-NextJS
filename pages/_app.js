@@ -2,22 +2,28 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import "../styles/_app.scss"
 
 import { useState } from 'react';
-import LanguageContext from '../components/languageContext';
 import LoadingContext from '../components/loadingContext';
+import { CookiesProvider, useCookies } from 'react-cookie';
 
 export default function App({Component, pageProps}) {
     const [isLoading, setIsLoading] = useState(true);
-    const [language, setLanguage] = useState("english");
+    const [cookies, setCookie, removeCookie] = useCookies(["language"]);
+
+    if (cookies["language"]) {
+        setCookie("language", "english", { path: '/' });
+    }
+    if(cookies["language"] != "english" && cookies["language"] != "turkish") {
+        removeCookie("language", { path: '/' });
+        setCookie("language", "english", { path: '/' });
+    }
 
     return (
-    <LoadingContext.Provider value = {{
-        isLoading: isLoading,
-        setIsLoading: setIsLoading}}>
-            <LanguageContext.Provider 
-                value={{currentLanguage: language, 
-                setCurrentLanguage: setLanguage}}>
-                    <Component {...pageProps} />
-            </LanguageContext.Provider>
-    </LoadingContext.Provider>
+    <CookiesProvider>
+        <LoadingContext.Provider value = {{
+            isLoading: isLoading,
+            setIsLoading: setIsLoading}}>
+                <Component {...pageProps} />
+        </LoadingContext.Provider>
+    </CookiesProvider>
     );
 }

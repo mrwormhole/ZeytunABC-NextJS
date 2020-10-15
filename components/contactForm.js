@@ -1,5 +1,5 @@
-import { useContext, useEffect } from 'react';
-import LanguageContext from './languageContext';
+import { useEffect } from "react";
+import { useCookies } from "react-cookie";
 
 function isFormEmpty(data) {
     if (data.email.trim() == "" ||  data.fullName.trim() == "" ||
@@ -37,7 +37,8 @@ function listenForKeyUp() {
 }
 
 export default function ContactForm() {
-    const {currentLanguage} = useContext(LanguageContext)
+    const [cookies] = useCookies(["language"]);
+    const currentLanguage = cookies["language"];
 
     useEffect(() => {
         listenForKeyUp();

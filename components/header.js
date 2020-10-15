@@ -1,9 +1,8 @@
-import { useContext } from "react";
-
-import LanguageContext from "./languageContext";
+import { useCookies } from "react-cookie";
 
 export default function Header() {
-    const { currentLanguage } =  useContext(LanguageContext);
+    const [cookies] = useCookies(["language"]);
+    const currentLanguage = cookies["language"];
 
     if (currentLanguage == "english") {
         return (
