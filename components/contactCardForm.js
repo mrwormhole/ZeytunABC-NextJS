@@ -43,11 +43,11 @@ export default function ContactCardForm() {
                 } 
             }}>
             <div className="banner">
-                <h1>CONTACT US</h1>
-                <h3>Fill out the form below to learn more!</h3>
+                <h1>{currentLanguage == "english" ? "CONTACT US" : "BİZE ULAŞIN"}</h1>
+                <h3>{currentLanguage == "english" ? "Fill out the form below to learn more!" : "Daha fazlasını öğrenmek için aşağıdaki formu doldurun!"}</h3>
             </div>
             
-            <label className="label paint-label-white">Personal Details</label>
+            <label className="label paint-label-white">{currentLanguage == "english" ? "Personal Details" : "Kişisel Detaylar"}</label>
             <div className="field is-grouped mt-5">
                 <div className="control is-expanded">
                     <input id="name" className="input" type="text" placeholder="Name" required/>
@@ -69,7 +69,7 @@ export default function ContactCardForm() {
                 </div>
 
                 <div className="field mt-5">
-                    <label className="label paint-label-white mb-5">Message</label>
+                    <label className="label paint-label-white mb-5">{currentLanguage == "english" ? "Message" : "Mesaj"}</label>
                     <div className="control">
                     <textarea id="message" className="textarea" placeholder="Your Message" required></textarea>
                     </div>
@@ -77,7 +77,7 @@ export default function ContactCardForm() {
 
                 <div className="field is-grouped is-grouped-centered">
                     <div className="control">
-                    <button className="button is-medium" type="submit" name="action">Submit</button>
+                    <button className="button is-medium" type="submit" name="action">{currentLanguage == "english" ? "Submit" : "GÖNDER"}</button>
                     </div>
                 </div>
                 </form>

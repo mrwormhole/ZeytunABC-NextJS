@@ -91,17 +91,17 @@ export default function Services() {
 
             <div className="columns is-centered mt-2 is-vcentered">
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box  mt-2 mx-5">
-                    <a href="/services/test" className="service-box-cover-link" />
+                    <a href="/services/payroll-pensions" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faFileInvoiceDollar} />
                     <h2>{currentLanguage == "english" ? serviceNames["english"][6] : serviceNames["turkish"][6]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <a href="/services/test" className="service-box-cover-link" />
+                    <a href="/services/management-accounts-audit" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faFileInvoice} />
                     <h2>{currentLanguage == "english" ? serviceNames["english"][7] : serviceNames["turkish"][7]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <a href="/services/test" className="service-box-cover-link" />
+                    <a href="/services/mortgage-insurance" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faChartLine} />
                     <h2>{currentLanguage == "english" ? serviceNames["english"][8] : serviceNames["turkish"][8]}</h2>
                 </div>
@@ -109,17 +109,17 @@ export default function Services() {
 
             <div className="columns is-centered mt-2 is-vcentered">
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <a href="/services/test" className="service-box-cover-link" />
+                    <a href="/services/business-consultancy" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faBriefcase} />
                     <h2>{currentLanguage == "english" ? serviceNames["english"][9] : serviceNames["turkish"][9]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <a href="/services/test" className="service-box-cover-link" />
+                    <a href="/services/market-research" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faUserTie} />
                     <h2>{currentLanguage == "english" ? serviceNames["english"][10] : serviceNames["turkish"][10]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <a href="/services/test" className="service-box-cover-link" />
+                    <a href="/services/ma-due-diligence" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faTasks} />
                     <h2>{currentLanguage == "english" ? serviceNames["english"][11] : serviceNames["turkish"][11]}</h2>
                 </div>

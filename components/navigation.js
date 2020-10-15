@@ -26,7 +26,7 @@ export default function Navigation(props) {
     //  path = pathArray[pathArray.length-1];
     //}
     
-    if(props.onPage == "contact" || props.onPage == "services") {
+    if(props.onPage == "contact") {
       return (
         <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
           <div className="container">
@@ -62,6 +62,66 @@ export default function Navigation(props) {
                 </Link>
                 <Link href="/contact">
                   <a className="navbar-item navbar-item-hoverable is-active">{currentLanguage == "english" ? "Contact" : "İletişim"}</a>
+                </Link>
+                
+
+                <div className="container-shape-wrapper">
+                  <div className="container-shape diamond-shape">
+                    <div className="language-name">
+                      <a onClick={() => {
+                        if(currentLanguage == "english") {
+                          setCurrentLanguage("turkish");
+                        } else {
+                          setCurrentLanguage("english");
+                        }
+                      }}>
+                        {getAbbvr(currentLanguage)}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </nav>
+      );
+    } else if (props.onPage == "services") {
+      return (
+        <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+          <div className="container">
+            <div className="navbar-brand">
+              <Link href="/">
+                <a className="navbar-item">
+                  <img src="/logo.png" alt="Zeytun ABC logo"/>
+                </a>
+              </Link>
+    
+              <a role="button" 
+                className="navbar-burger burger" 
+                aria-label="menu" 
+                aria-expanded="false" 
+                data-target="navbarBasicExample" 
+                onClick={() => toggleBurger()}>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+              </a>
+            </div>
+    
+            <div id="navbarBasicExample" className="navbar-menu"> 
+              <div className="navbar-end">
+                <Link href="/">
+                  <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "Home" : "Anasayfa"}</a>
+                </Link>
+                <Link href="/">
+                  <a className="navbar-item navbar-item-hoverable is-active">{currentLanguage == "english" ? "Services" : "Servisler"}</a>
+                </Link>
+                <Link href="/">
+                  <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "About" : "Hakkında"}</a>
+                </Link>
+                <Link href="/contact">
+                  <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "Contact" : "İletişim"}</a>
                 </Link>
                 
 

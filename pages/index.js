@@ -56,7 +56,7 @@ export default function HomePage() {
         <Introduction />
         <Certification />
         <Services />
-        <Achievements />
+        {/*<Achievements />*/}
         <About />
         <ContactForm />
       </main>
