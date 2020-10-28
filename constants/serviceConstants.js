@@ -13,17 +13,17 @@ export const serviceNameContentMap = {
         `We provide comprehensive services for those companies and individuals who are willing to set up and operate a business, either as a company or a sole-trader in the UK, through Turkish Businessperson Visa (ECAA-Ankara Agreement).
         \nWe also prepare highly qualified business plans throughout the Visa application process.
         \nThese include all registrations, bookkeeping, accounting as well as other consultancy services to help you run your business in the most appropriate way. You will be able to carry out your visa extensions on time, smoothly, comfortably and with firm steps.
-        \nIn addition to these, we also have services to manage the application process for relevant government incentives in line with your activities.
-        \nMoreover, we help you form a web page, business e-mail address, social media appearance and other initial branding activities upon your needs. 
-        \nBesides, we help you set up a business banking account. 
-        \nFurthermore, we provide Central London address for your business registration.
-        \nWe also help you register your trademark to the relevant authorities in the UK and in the EU.`
+        \nIn addition to these, we also have services to manage the application process for relevant government incentives in line with your activities.`
         ,
         `We carry out all necessary applications and registration procedures on your behalf to establish a new business in the UK.
         \nIn addition, we update the annual records and make changes that may occur in your company when you request.
         \nWe also help you form a web page, business e-mail address, social media appearance and other initial branding activities upon your needs. 
         \nBesides, we help you set up a business banking account. Furthermore, we provide Central London address for your business registration.
-        \nLast but not the least, we also help you register your trademark to the relevant authorities in the UK and in the EU.`
+        \nLast but not the least, we also help you register your trademark to the relevant authorities in the UK and in the EU.
+		\nMoreover, we help you form a web page, business e-mail address, social media appearance and other initial branding activities upon your needs. 
+        \nBesides, we help you set up a business banking account. 
+        \nFurthermore, we provide Central London address for your business registration.
+        \nWe also help you register your trademark to the relevant authorities in the UK and in the EU.`
         ,
         `You may use the advantage of a registered company address in Kensington, where is one of the most prestigious locations in London as well as in the world. Thus, you may have the opportunity to establish a better branding in the market.
         \nAlong with company registered address, we also provide correspondence services. In this regard, we scan your letters and send them to your e-mail addresses. 
