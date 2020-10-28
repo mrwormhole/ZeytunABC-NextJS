@@ -1,19 +1,23 @@
 export const serviceNames = {
     "english": ["Ankara Agreement", "Company Formation", "Address Services", "Bookkeeping", "Tax Services", "Year-End Accounts", 
-                "Payroll & Pensions", "Management Accounts & Audit", "Mortgage & Insurance", "Business Consultancy", "Market Research", "M&A & Due Diligence"],
+                "Payroll & Pensions", "Management Accounts", "Mortgage & Insurance", "Business Consultancy", "Market Research", "M&A - Due Diligence"],
     "turkish": ["Ankara Anlaşması", "Şirket Kurulumu", "Adres Servisi", "Ön Muhasebe İşlemleri", "Vergi İşlemleri", "Dönem Sonu Muhasebe İşlemleri",
                 "Maaş Bordroları & Emeklilik", "Yönetim Muhasebesi & Denetim", "Konut Kredisi & Sigorta", "İşletme Danışmanlığı", "Pazar Araştırması", "Birleşme & Satın Alma"]
 };
 
 export const serviceNameSlugs = ["ankara-agreement", "company-formation", "address-services", "bookkeeping", "tax-services", "year-end-accounts", 
-                                 "payroll-pensions", "management-accounts-audit", "mortgage-insurance", "business-consultancy", "market-research", "ma-due-diligence"];
+                                 "payroll-pensions", "management-accounts", "mortgage-insurance", "business-consultancy", "market-research", "ma-due-diligence"];
 
 export const serviceNameContentMap = {
     "english": [
         `We provide comprehensive services for those companies and individuals who are willing to set up and operate a business, either as a company or a sole-trader in the UK, through Turkish Businessperson Visa (ECAA-Ankara Agreement).
         \nWe also prepare highly qualified business plans throughout the Visa application process.
         \nThese include all registrations, bookkeeping, accounting as well as other consultancy services to help you run your business in the most appropriate way. You will be able to carry out your visa extensions on time, smoothly, comfortably and with firm steps.
-        \nIn addition to these, we also have services to manage the application process for relevant government incentives in line with your activities.`
+        \nIn addition to these, we also have services to manage the application process for relevant government incentives in line with your activities.
+        \nMoreover, we help you form a web page, business e-mail address, social media appearance and other initial branding activities upon your needs. 
+        \nBesides, we help you set up a business banking account. 
+        \nFurthermore, we provide Central London address for your business registration.
+        \nWe also help you register your trademark to the relevant authorities in the UK and in the EU.`
         ,
         `We carry out all necessary applications and registration procedures on your behalf to establish a new business in the UK.
         \nIn addition, we update the annual records and make changes that may occur in your company when you request.
@@ -39,7 +43,7 @@ export const serviceNameContentMap = {
         \nTo this end, we support you with ACCA and FCCA certified chartered accountants who are providing these services for your business in the most appropriate way.`
         ,
         `We provide payroll services for your company employees as well as directors. These include processing payslips, sending them to the company and submitting to the HMRC.
-        \nIn order to start regular payments to yourself as a self-empoyed or to all employees in your company, you need NINO to apply for PAYE registration to the HMRC. Upon your application, you will receive a PAYE reference number as well as Account Office Reference Number. These will be necessary to submit payslips to the HMRC every month. We help you in each step you need to take.
+        \nIn order to start regular payments to yourself as a self-employed or to all employees in your company, you need NINO to apply for PAYE registration to the HMRC. Upon your application, you will receive a PAYE reference number as well as Account Office Reference Number. These will be necessary to submit payslips to the HMRC every month. We help you in each step you need to take.
         \nWe also support you in several other applications about payments to your employees, for example the pensions or government contributions.`
         ,
         `We help you perform better management, supervision and planning activities with our evaluation, analysis and advice on the performance of your business.
@@ -58,7 +62,7 @@ export const serviceNameContentMap = {
         \nWe provide bespoke market reports for our clients, on the specific topics they need, upon their request. Throughout our researches we collect data from various sources, namely conducting surveys, observations, and interviews as well as compiling publicly available information and other data that require source subscription.
         \nWe also prepare our special proactive researches related to several topics, whether on a certain subject or any industry related issues. Moreover, we provide periodic newsletters on various areas that cover major news and developments in the market.`
         ,
-        `It is seen that there are many investment opportunities in the national or international area within the scope of the multinational business approach of our globalizing world. News on company marriage, joint ventures, mergers and acquisition are among the indispensable routine developments of the business world. 
+        `It is seen that there are many investment opportunities in the national or international area within the scope of the multinational business approach of our globalizing world. News on company marriage, joint ventures, mergers and acquisition are among the indispensable routine developments of the business environment. 
         \nTo this end, we provide consultancy services for individuals or businesses that seek to invest either in the UK or in other countries as well as who are looking for an investor for their companies. 
         \nWe assist with comprehensive services to both buyer and seller parties, by inclusive activities from pre-start to finish of the process.`
     ],

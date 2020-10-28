@@ -96,7 +96,7 @@ export default function Services() {
                     <h2>{currentLanguage == "english" ? serviceNames["english"][6] : serviceNames["turkish"][6]}</h2>
                 </div>
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <a href="/services/management-accounts-audit" className="service-box-cover-link" />
+                    <a href="/services/management-accounts" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faUserTie} />
                     <h2>{currentLanguage == "english" ? serviceNames["english"][7] : serviceNames["turkish"][7]}</h2>
                 </div>

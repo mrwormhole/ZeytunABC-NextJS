@@ -8,12 +8,12 @@ export default function Header() {
         return (
             <React.Fragment>
                 <h1 className="title"> 
-                    We provide perfect solutions for businesses and self employed individuals who need
-                    <span>convenient and reliable</span> accountancy services
+                    We are ready here to help you for <span>a successful business. </span>
+                    We provide professional services at a fair price for your company.
                 </h1>
                 <br />
                 <h2 className="subtitle"> 
-                    Specialized in Accounting, Bookkeeping and Consultancy Services
+                    Specialized in Accounting, Bookkeeping and Consultancy Services.
                 </h2>
             </React.Fragment>
         );
@@ -21,12 +21,12 @@ export default function Header() {
         return (
             <React.Fragment>
                 <h1 className="title"> 
-                <span>Uygun ve güvenilir</span> muhasebe servislerine ihtiyaç duyan işletmeler 
-                ve serbest meslek sahipleri için en iyi çözümleri sunuyoruz
+                    İşletmenizde <span>sürdürülebilir başarı</span> sağlamanız için buradayız. 
+                    Profesyonel muhasebe ve danışmanlık hizmetlerimizle uygun fıyatlarla çözümler sunmaktayız.
                 </h1>
                 <br />
                 <h2 className="subtitle"> 
-                    Muhasebe, Ön Muhasebe  ve Danışmanlık Hizmetlerinde Profesyonellik
+                    Ayrıntılı bilgiye ulaşmak için lütfen irtibata geçiniz. 
                 </h2>
             </React.Fragment>
         );

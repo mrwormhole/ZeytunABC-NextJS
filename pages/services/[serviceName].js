@@ -15,7 +15,7 @@ export default function Service() {
     const [cookies] = useCookies(["language"]);
     const currentLanguage = cookies["language"];
 
-    console.log("COOKIES: ", cookies);
+    //console.log("COOKIES: ", cookies);
 
     let slugName = "";
     if (typeof window !== `undefined`) {
