@@ -18,7 +18,7 @@ function getAbbvr(languageName) {
 
 export default function Navigation(props) {
     const [cookies, setCookie] = useCookies(["language"]);
-    const currentLanguage = cookies["language"]
+    const currentLanguage = cookies["language"];
     //var path = "";
 
     //if (typeof window !== `undefined`) {

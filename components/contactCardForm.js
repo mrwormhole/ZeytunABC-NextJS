@@ -77,7 +77,7 @@ export default function ContactCardForm() {
 
                 <div className="field is-grouped is-grouped-centered">
                     <div className="control">
-                    <button className="button is-medium" type="submit" name="action">{currentLanguage == "english" ? "Submit" : "GÖNDER"}</button>
+                    <button className="button" type="submit" name="action">{currentLanguage == "english" ? "Submit" : "GÖNDER"}</button>
                     </div>
                 </div>
                 </form>
