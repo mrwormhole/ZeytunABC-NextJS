@@ -20,7 +20,7 @@ export default function Certification() {
                     <FontAwesomeIcon className="tick-icon" icon={faCheckSquare} />
                     {currentLanguage == "english" ?
                         " Registered to the Information Commissioner's Office (ICO)" :
-                        " Bilgi Komiserliği Ofisine (ICO) kayıtlı"
+                        " Veri Güvenliği Kapsamında ICO kaydımız bulunmaktır"
                     }
                 </h2>
                 </div>

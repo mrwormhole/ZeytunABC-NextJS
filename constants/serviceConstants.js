@@ -70,7 +70,7 @@ export const serviceNameContentMap = {
         `Yeni bir işletme kurmak üzere gerekli bütün başvuru ve kayıt işlemlerinizi sizin adınıza yerine getiriyoruz. Bu doğrultuda, şahıs işletmeleri (sole trader) ve limited şirketler başta olmak üzere her türlü şirket kurulumu ve diğer gerekli işlemleri hizmetinize sunmaktayız.
         \nİlave olarak, yıllık onay gerektiren “Confirmation Statement” adı verilen güncellemeler ve şirketinizde meydana gelecek değişiklik talepleriniz için gerekli kayıtlar tarafımızca yapılmaktadır.
         \nÖte yandan, işletmenize uygun internet sitesi oluşturma, sosyal medya görünürlüğü sunma gibi başlangıç aşamasında pazarlama faaliyetleri ile Londra merkezli adres sağlama ve banka hesabı açma gibi konularda destek olmatayız.
-        \nAyrıca, gerek Birleşik Krallık gerek Avrupa Birlği içerisinde geçerli nitelikte ticari marka tescil başvuru işlemlerini sizler adına yürütmekteyiz.`
+        \nAyrıca, gerek Birleşik Krallık gerek Avrupa Birliği içerisinde geçerli nitelikte ticari marka tescil başvuru işlemlerini sizler adına yürütmekteyiz.`
         ,
         `Londra’nın en prestijli yerlerinden olan Kensington bölgesinde şirketiniz için adres kayıt imkanı sunmaktayız. Böylece iş dünyasında güven veren bir imaj oluşturmanıza katkı sağlayabilirsiniz. 
         \nSöz konusu adres hizmeti kapsamında, şirketinizle ilgili adınıza gelen belgelerin e-posta adresinize gönderilmesi ve ayrıca ivedilik arz eden postalar için gerekli işlemlerin hızlı bir şekilde yerine getirilmesi imkanını elde edebilirsiniz. 
