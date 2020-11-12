@@ -13,9 +13,11 @@ import Services from '../components/services';
 import Certification from '../components/certification';
 import Achievements from '../components/achievements';
 import ContactForm from '../components/contactForm';
+import { useCookies } from 'react-cookie';
 
 export default function HomePage() {
   const { isLoading, setIsLoading } = useContext(LoadingContext);
+  const [cookies2, setCookie2, removeCookie2] = useCookies(["animationEnabled"]);
 
   useEffect(() => {
     setTimeout(() => { 
@@ -23,11 +25,15 @@ export default function HomePage() {
     }, 2000);
   }, [isLoading]);
 
-  if (isLoading) {
-    return (
-        <Preloader />
-    );
+  if (typeof window !== undefined) {
+    if (isLoading) {
+      return (
+          <Preloader />
+      );
+    }
   }
+
+  console.log("isloading(index page): ",isLoading);
 
   return (
     <React.Fragment>

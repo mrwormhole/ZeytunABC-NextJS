@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Head from 'next/head'
 
+import LoadingContext from "../../components/loadingContext";
 import Navigation from '../../components/navigation';
 import FloatingActionButton from "../../components/floatingActionButton";
 import Footer from "../../components/footer";
@@ -14,8 +15,8 @@ export default function Service() {
     const { serviceName } = router.query;
     const [cookies] = useCookies(["language"]);
     const currentLanguage = cookies["language"];
-
-    //console.log("COOKIES: ", cookies);
+    const { isLoading, setIsLoading } = useContext(LoadingContext);
+    setIsLoading(false);
 
     let slugName = "";
     if (typeof window !== `undefined`) {
