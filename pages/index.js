@@ -33,8 +33,6 @@ export default function HomePage() {
     }
   }
 
-  console.log("isloading(index page): ",isLoading);
-
   return (
     <React.Fragment>
 
