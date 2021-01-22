@@ -839,4 +839,35 @@ footer {
 }
 //services page styling
 
+//construction page styling
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+
+//TODO remove this if under construction is over
+html {
+    background: #EEEEF4;
+}
+
+.warning-head-text{
+  font-family: $z-brand-font;
+  font-size:3rem;
+  color:#E43;
+  margin-bottom: 10px;
+}
+
+.warning-content {
+	position:absolute;
+    top:25%;
+    width:100%;
+    height:300px;
+    text-align:center;
+    margin:0;
+}
+
+.warning-text {
+    font-family: $z-content-font;
+    color:#999;
+    margin-top: 10px;
+}
+//construction page styling
+
   
