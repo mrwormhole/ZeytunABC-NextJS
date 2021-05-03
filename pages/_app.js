@@ -18,7 +18,7 @@ export default function App({Component, pageProps}) {
         setCookie("language", "english", { path: '/' });
     }
 
-    let maintenance = true
+    let maintenance = false
     if(maintenance) {
         return(
             <UnderConstructionPage />
