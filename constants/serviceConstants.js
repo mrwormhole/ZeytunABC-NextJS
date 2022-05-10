@@ -22,7 +22,7 @@ export const serviceNameContentMap = {
         \nFurthermore, we provide Central London address for your business registration.
         \nWe also help you register your trademark to the relevant authorities in the UK and in the EU.`
         ,
-        `You may use the advantage of a registered company address in Kensington, where is one of the most prestigious locations in London as well as in the world. Thus, you may have the opportunity to establish a better branding in the market.
+        `You may use the advantage of a registered company address in Covent Garden, where is one of the most prestigious locations in London as well as in the world. Thus, you may have the opportunity to establish a better branding in the market.
         \nAlong with company registered address, we also provide correspondence services. In this regard, we scan your letters and send them to your e-mail addresses. 
         \nWe keep all your mails secure in our ICO licensed office. Upon your request, we can send all your mails and other documents to you.`
         ,
@@ -72,7 +72,7 @@ export const serviceNameContentMap = {
         \nÖte yandan, işletmenize uygun internet sitesi oluşturma, sosyal medya görünürlüğü sunma gibi başlangıç aşamasında pazarlama faaliyetleri ile Londra merkezli adres sağlama ve banka hesabı açma gibi konularda destek olmatayız.
         \nAyrıca, gerek Birleşik Krallık gerek Avrupa Birliği içerisinde geçerli nitelikte ticari marka tescil başvuru işlemlerini sizler adına yürütmekteyiz.`
         ,
-        `Londra’nın en prestijli yerlerinden olan Kensington bölgesinde şirketiniz için adres kayıt imkanı sunmaktayız. Böylece iş dünyasında güven veren bir imaj oluşturmanıza katkı sağlayabilirsiniz. 
+        `Londra’nın en prestijli yerlerinden olan Covent Garden bölgesinde şirketiniz için adres kayıt imkanı sunmaktayız. Böylece iş dünyasında güven veren bir imaj oluşturmanıza katkı sağlayabilirsiniz. 
         \nSöz konusu adres hizmeti kapsamında, şirketinizle ilgili adınıza gelen belgelerin e-posta adresinize gönderilmesi ve ayrıca ivedilik arz eden postalar için gerekli işlemlerin hızlı bir şekilde yerine getirilmesi imkanını elde edebilirsiniz. 
         \nŞirketimizin, veri güvenliği lisansı bulunmakta olup talebiniz halinde bu evrakı tarafınıza ulaştırabiliriz.`
         ,
