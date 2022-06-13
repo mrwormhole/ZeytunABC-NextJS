@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import React from "react";
 
 import Navigation from '../components/navigation';
 import FloatingActionButton from "../components/floatingActionButton";
