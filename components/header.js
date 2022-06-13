@@ -1,4 +1,5 @@
 import { useCookies } from "react-cookie";
+import React from "react";
 
 export default function Header() {
     const [cookies] = useCookies(["language"]);

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useEffect, useContext } from 'react';
+import React from "react";
 
 import LoadingContext from "../components/loadingContext";
 import Preloader from '../components/preloader';
