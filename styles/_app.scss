@@ -281,6 +281,8 @@ $footer-padding: 3rem 1rem 3rem 1rem;
     .notification {
         margin-top: 1rem;
         background-color: $z-yellow;
+        color: $z-white-like;
+        font-family: $z-header-font;
     }
 
     @media (max-width: 441px) { 

@@ -10,7 +10,7 @@ export default function ServiceFees() {
     }
 
     return (
-        <section className="section container" id="service-fees">
+        <section className="section table-container" id="service-fees">
             <h2 className="title">Servis Ücretleri</h2>
             <br />
 

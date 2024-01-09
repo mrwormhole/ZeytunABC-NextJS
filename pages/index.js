@@ -18,7 +18,6 @@ import ServiceFees from '../components/service-fees';
 
 export default function HomePage() {
   const { isLoading, setIsLoading } = useContext(LoadingContext);
-  const [cookies2, setCookie2, removeCookie2] = useCookies(["animationEnabled"]);
 
   useEffect(() => {
     setTimeout(() => { 

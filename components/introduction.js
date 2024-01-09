@@ -13,7 +13,7 @@ export default function Introduction() {
         return (
             <section className="section is-paddingless" id="home">
                 <div className="hero is-fullheight-with-navbar has-background-pattern">
-                    <div class="notification is-link has-text-centered">
+                    <div className="notification has-text-centered">
                         <b>Sevgili müşterilerimiz, 2024 yılı genel duyurumuzu okumak için lütfen</b> <Link href="/announcement"><a>tıklayınız</a></Link>
                     </div>
 
