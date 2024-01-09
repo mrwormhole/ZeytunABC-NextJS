@@ -12,9 +12,9 @@ import Introduction from "../components/introduction";
 import About from "../components/about";
 import Services from '../components/services';
 import Certification from '../components/certification';
-import Achievements from '../components/achievements';
 import ContactForm from '../components/contactForm';
 import { useCookies } from 'react-cookie';
+import ServiceFees from '../components/service-fees';
 
 export default function HomePage() {
   const { isLoading, setIsLoading } = useContext(LoadingContext);
@@ -61,7 +61,7 @@ export default function HomePage() {
         <Introduction />
         <Certification />
         <Services />
-        {/*<Achievements />*/}
+        <ServiceFees />
         <About />
         <ContactForm />
       </main>

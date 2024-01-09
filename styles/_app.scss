@@ -12,6 +12,9 @@ $z-white-darker: #E7ECF0;
 $z-black-pure: #222021; //PATTERN BACKGROUND COLOR
 $z-black-lighter: #363636; //PATTERN SYMBOL COLOR
 
+$table-color: #f0f0f0;
+$table-background-color: #363636;
+
 // Zeytun ABC Fonts
 $z-brand-font: "Lobster", cursive;
 $z-header-font: "Merriweather", serif;
@@ -313,6 +316,34 @@ $footer-padding: 3rem 1rem 3rem 1rem;
     }
 }
 //about component styling
+
+//service fees component styling
+#service-fees {
+    .title {
+      font-size: 3rem;
+      color: $z-yellow;
+      font-family: $z-header-font;
+      text-align: center;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        color: $z-black-lighter;
+        font-family: $z-content-font;
+        line-height: 2.5rem;
+    }
+
+    th {
+        color: $z-yellow;
+    }
+
+    @media (max-width: 441px) { 
+        .title {
+            font-size: 2.25rem !important;
+        }
+    }
+}
+//service fees component styling
 
 //service card component styling
 #service-card {
