@@ -5,7 +5,7 @@ import Script from 'next/script';
 import { useState } from 'react';
 import LoadingContext from '../components/loadingContext';
 import { CookiesProvider, useCookies } from 'react-cookie';
-import UnderConstructionPage from './underConstruction';
+import UnderConstructionPage from './under-construction';
 
 export default function App({Component, pageProps}) {
     const [isLoading, setIsLoading] = useState(true);
