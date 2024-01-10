@@ -1,8 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function ServiceCard({serviceName, serviceDescription, icons}) {
-    
-
     return (
         <div className="card" id="service-card">
             <div className="card-content">

@@ -652,7 +652,6 @@ footer {
 //welcome title on preloader styling
 
 //contact form component styling
-//Kudos to Aina Requena from Berlin
 #contact {
     max-width: 650px;
     margin: 0 auto;
@@ -882,7 +881,6 @@ footer {
 //construction page styling
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 
-//TODO remove this if under construction is over
 html {
     background: #EEEEF4;
 }
@@ -909,5 +907,24 @@ html {
     margin-top: 10px;
 }
 //construction page styling
+
+//announcement page styling
+.announcement-content {
+    font-family: $z-content-font;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #f0f0f0;
+
+    a {
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    span {
+        color: $z-yellow;
+    }
+}
+//announcement page styling
 
   

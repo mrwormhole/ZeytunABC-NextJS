@@ -14,7 +14,7 @@ export default function Introduction() {
             <section className="section is-paddingless" id="home">
                 <div className="hero is-fullheight-with-navbar has-background-pattern">
                     <div className="notification has-text-centered">
-                        <b>Sevgili müşterilerimiz, 2024 yılı genel duyurumuzu okumak için lütfen</b> <Link href="/announcement"><a>tıklayınız</a></Link>
+                        <b>Sevgili müşterilerimiz, genel duyurumuzu okumak için lütfen</b> <Link href="/announcement"><a>tıklayınız</a></Link>
                     </div>
 
                     <div className="hero-body">
