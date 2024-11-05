@@ -909,6 +909,15 @@ html {
 //construction page styling
 
 //announcement page styling
+#announcement {
+    .notification {
+        //margin-top: 1rem;
+        background-color: $z-blue;
+        color: $z-white-like;
+        font-family: $z-header-font;
+    }
+}
+
 .announcement-content {
     font-family: $z-content-font;
     font-size: 1.5rem;
@@ -926,5 +935,3 @@ html {
     }
 }
 //announcement page styling
-
-  

@@ -33,7 +33,7 @@ export default function AnnouncementPage() {
             <main>
                 <section className="hero is-primary has-background-pattern services-hero" id="announcement">
                     <div className="notification has-text-centered">
-                        Sevgili müşterilerimiz, 1 Kasım 2023 eski genel duyurumuzu okumak için buraya <Link href="/old-announcement"><a>tıklayınız</a></Link>
+                        Sevgili müşterilerimiz, 4 Kasım 2024 yeni genel duyurumuzu okumak için buraya <Link href="/announcement"><a>tıklayınız</a></Link>
                     </div>
                     <div className="hero-body">
                         <div className="container">
@@ -45,7 +45,7 @@ export default function AnnouncementPage() {
                             Değerli müşterimiz,
                             <br /><br />
                             1) İngiltere'de kişisel gelir vergi mükelleflerinin gelir vergisi beyanname ve vergi ödemesi süresi için son gün, 31 Ocak’tır. Bu durum, İngiltere'deki bütün şahıs işletmeleri (Sole Trader) ve gelir vergisi mükellefleri (tax resident) için geçerlidir.
-                            Henüz vergi ödemesini yapmayanların 31 Ocak 2025’ten önce vergi ödemelerini tamamlamaları gerekmektedir. Vergi beyannamesi hazır olmayanların ise bizle irtibata geçerek 06/04/2023 ile 05/04/2024 tarihleri arasındaki bütün gelirlerini bize iletmeleri gerekmektedir. Bu gelirlere İngiltere dışında bu dönemde kazanılmış olup İngiltere’ye getirilmiş olan gelirler de dahildir. Bizim ilgilendiğimiz İngiltere’deki şirketinizden elde ettiğiniz maaş bilgisi, bizde bulunmaktadır. Bunun dışındaki gelirlerinizi bize iletmeniz gerekmektedir.
+                            Henüz vergi ödemesini yapmayanların 31 Ocak 2024’ten önce vergi ödemelerini tamamlamaları gerekmektedir. Vergi beyannamesi hazır olmayanların ise bizle irtibata geçerek 06/04/2022 ile 05/04/2023 tarihleri arasındaki bütün gelirlerini bize iletmeleri gerekmektedir. Bu gelirlere İngiltere dışında bu dönemde kazanılmış olup İngiltere’ye getirilmiş olan gelirler de dahildir. Bizim ilgilendiğimiz İngiltere’deki şirketinizden elde ettiğiniz maaş bilgisi, bizde bulunmaktadır. Bunun dışındaki gelirlerinizi bize iletmeniz gerekmektedir.
                             <br /><br />
                             2) Her bir şirket için ise, kuruluş tarihi dikkate alınarak hesap dönemleri farklılık göstermekle birlikte, şirket vergi beyanı ve ödeme süresi, hesap kesim tarihini müteakip en fazla 9 aydır. Bu kapsamda lütfen şirket hesaplarınızı tam ve doğru bir şekilde yapabilmemiz için sizle paylaştığımız Google Drive klasörüne csv formatındaki banka dökümünüz, nakit hareketler listesi ile alış ve satış faturalarınızı yükleme işlemini geciktirmeyiniz.
                             Şirketlerin ayrıca yıllık güncel durum beyanını ifade eden Confirmation Statement işlem zorunluluğu vardır. Bunun için de zamanı geldikçe bilgilendirme yapmaya devam ediyoruz.
@@ -59,7 +59,7 @@ export default function AnnouncementPage() {
                                 <li className='mx-5'>○ Maaş dönemi: Temmuz, Ağustos, Eylül ayları için son ödeme tarihi: 22 Ekim</li>
                             </ul>
                             <br />
-                            4) Şahıs işletmeleri veya şirketlerde birbirini takip eden son 12 aylık dönemde KDV'ye tabi olabilecek £90.000 tutarında gelire/ciroya ulaşılması durumunda KDV/VAT kaydı zorunlu hale gelmektedir. Dolayısıyla kontrollerinizi yaparak satış hacminizin bu seviyelere yaklaşması durumunda ilgili kayıtlar için ivedilikle bizle irtibata geçmenizi rica ederiz.
+                            4) Şahıs işletmeleri veya şirketlerde birbirini takip eden son 12 aylık dönemde KDV'ye tabi olabilecek £85.000 tutarında gelire/ciroya ulaşılması durumunda KDV/VAT kaydı zorunlu hale gelmektedir. Dolayısıyla kontrollerinizi yaparak satış hacminizin bu seviyelere yaklaşması durumunda ilgili kayıtlar için ivedilikle bizle irtibata geçmenizi rica ederiz.
                             VAT kayıtlı işletmelerde, VAT beyannamesi ve vergi ödemesi dönemleri farklılık gösterse bile bu işlemler için bütün işletmelerin ilgili dönem sonunu müteakip en fazla 1 ay 7 gün süresi  bulunmaktadır.
                             <br /><br />
                             5) Hesaplarınızı zamanında yapabilmemiz için ortak paylaşımda bulunan Google Drive klasörü üzerinden alış-satış faturaları, banka dökümleri ve nakit hareketlerini yansıtan belgeleri düzenli ve zamanında yüklemenizi rica ediyoruz. Geciken bilgi ve belgelerden dolayı sorumluluk bize ait değildir.
@@ -70,18 +70,17 @@ export default function AnnouncementPage() {
                             <br /><br />
                             8) Halihazırda her bir müşterimizin özel durumuna göre bir fiyat üzerinde anlaşmamız devam etmekle birlikte standart hizmet talepleri için fiyatlarımız şu şekildedir:
                             <ul>
-                                <li className='mx-5'>○ Şirket kurulumu: £250</li>
-                                <li className='mx-5'>○ Baz nitelikte adres hizmeti: £250</li>
+                                <li className='mx-5'>○ Şirket kurulumu: £200</li>
+                                <li className='mx-5'>○ Baz nitelikte adres hizmeti: £100</li>
                                 <li className='mx-5'>○ VAT'li şirket muhasebesi: £1.800</li>
                                 <li className='mx-5'>○ VAT'siz Şirket Muhasebesi: £1.200</li>
-                                <li className='mx-5'>○ Sole Trader Muhasebe Hizmetleri: £1.000</li>
-                                <li className='mx-5'>○ Şirket kapanışı ve/veya Dormant Company Hesapları: £500</li>
-                                <li className='mx-5'>○ Interim Company Accounts: £700</li>
+                                <li className='mx-5'>○ Sole Trader Muhasebe Hizmetleri: £900</li>
+                                <li className='mx-5'>○ Şirket kapanışı ve/veya Dormant Company Hesapları: £350</li>
                             </ul>
                             <br />
-                            Bu fiyatlara ön muhasebe hizmetleri, yönetim muhasebesi (interim accounts), ekstra bordro hizmetleri, özel görüşme ve acil cevap talepleri gibi hizmetler ile devletin aldığı ücretler ve VAT dahil değildir. Dönemi içinde servis değişiklik talebi bulunanlara göre de revize fiyat uygulanacaktır. Bu fiyatlar enflasyon koşullarına göre yeni dönemde karşılıklı anlaşma doğrultusunda değişebilecektir.
+                            Bu fiyatlara ön muhasebe hizmetleri, yönetim muhasebesi (interim accounts), ekstra bordro hizmetleri, özel görüşme ve acil cevap talepleri gibi hizmetler ile devletin aldığı ücretler dahil değildir. Dönemi içinde servis değişiklik talebi bulunanlara göre de revize fiyat uygulanacaktır. Bu fiyatlar enflasyon koşullarına göre yeni dönemde karşılıklı anlaşma doğrultusunda değişebilecektir.
                             <br /><br />
-                            İşlerine yeni başlayan müşterilerimiz için bu zamana kadar borç erteleme imkanı sunmaya çalıştık, çalışmaya devam ediyoruz. Ancak, 01 Ocak 2025'ten itibaren aylık düzende ödeme talep etmekteyiz. Bugüne kadar borcunu tamamlamayan müşterilerimizin Aralık sonuna kadar ödemelerini tamamlamalarını rica ediyoruz. Aksi takdirde, üzülerek ifade ederek ödemesini düzenli yapmayan müşterilerimiz için hizmetlerimizi devam ettiremeyeceğimizi bildirmek durumundayız. Lütfen borç bilginiz hakkında bizle irtibata geçiniz.
+                            İşlerine yeni başlayan müşterilerimiz için bu zamana kadar borç erteleme imkanı sunmaya çalıştık, çalışmaya devam ediyoruz. Ancak, 2024 Ocak ve devamı için aylık düzende ödeme talep etmekteyiz. Bugüne kadar borcunu tamamlamayan müşterilerimizin Aralık sonuna kadar ödemelerini tamamlamalarını rica ediyoruz. Aksi takdirde, üzülerek ifade ederek ödemesini düzenli yapmayan müşterilerimiz için hizmetlerimizi devam ettiremeyeceğimizi bildirmek durumundayız. Lütfen borç bilginiz hakkında bizle irtibata geçiniz.
                             <br /><br />
                             Düzenli ödemede bulunan ve borcunu takip eden müşterilerimize teşekkür ederiz.
                             <br /><br />
