@@ -58,6 +58,10 @@ export default function Introduction() {
     return (
         <section className="section is-paddingless" id="home">
             <div className="hero is-fullheight-with-navbar has-background-pattern">
+                <div className="notification has-text-centered">
+                    <b>Dear clients, please to read our up-to-date general announcement </b><Link href="/announcement"><a>here</a></Link>
+                </div>
+
                 <div className="hero-body">
                     <div className="columns">
                         <div className="column is-8 is-offset-2" >

@@ -11,8 +11,8 @@ function toggleBurger() {
 }
 
 function getAbbvr(languageName) {
-  if (languageName == "english") { return "TR"; }
-  else if (languageName == "turkish") { return "EN"; }
+  if (languageName == "english") { return "EN"; }
+  else if (languageName == "turkish") { return "TR"; }
   else { return "UNDEF"; }
 }
 

@@ -5,8 +5,17 @@ import Footer from '../components/footer';
 import Navigation from '../components/navigation';
 import FloatingActionButton from '../components/floatingActionButton';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
+import { useCookies } from "react-cookie";
 
 export default function AnnouncementPage() {
+    const [cookies, setCookie] = useCookies(["language"]);
+    const currentLanguage = cookies["language"];
+    if (currentLanguage == "english") {
+        const router = useRouter()
+        router.push("/announcement");
+    }
+
     return (
         <React.Fragment>
 

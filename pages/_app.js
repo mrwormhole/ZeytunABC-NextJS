@@ -9,13 +9,9 @@ import UnderConstructionPage from './under-construction';
 
 export default function App({Component, pageProps}) {
     const [isLoading, setIsLoading] = useState(true);
-    const [cookies, setCookie, removeCookie] = useCookies(["language"]);
+    const [cookies, setCookie] = useCookies(["language"]);
 
-    if (cookies["language"]) {
-        setCookie("language", "english", { path: '/' });
-    }
-    if(cookies["language"] != "english" && cookies["language"] != "turkish") {
-        removeCookie("language", { path: '/' });
+    if (!cookies["language"]) {
         setCookie("language", "english", { path: '/' });
     }
 
