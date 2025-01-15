@@ -11,8 +11,6 @@ export default function AnnouncementPage() {
     const [cookies] = useCookies(["language"]);
     const currentLanguage = cookies["language"];
 
-    console.log("lang", currentLanguage);
-
     if (currentLanguage == "turkish") {
         return (
             <React.Fragment>
