@@ -72,13 +72,13 @@ export default function AnnouncementPage() {
                             <ul>
                                 <li className='mx-5'>○ Şirket kurulumu: £200</li>
                                 <li className='mx-5'>○ Baz nitelikte adres hizmeti: £100</li>
-                                <li className='mx-5'>○ VAT'li şirket muhasebesi: £1.800</li>
+                                <li className='mx-5'>○ VAT'li işletme muhasebesi: £1.800</li>
                                 <li className='mx-5'>○ VAT'siz Şirket Muhasebesi: £1.200</li>
                                 <li className='mx-5'>○ Sole Trader Muhasebe Hizmetleri: £900</li>
                                 <li className='mx-5'>○ Şirket kapanışı ve/veya Dormant Company Hesapları: £350</li>
                             </ul>
                             <br />
-                            Bu fiyatlara ön muhasebe hizmetleri, yönetim muhasebesi (interim accounts), ekstra bordro hizmetleri, özel görüşme ve acil cevap talepleri gibi hizmetler ile devletin aldığı ücretler dahil değildir. Dönemi içinde servis değişiklik talebi bulunanlara göre de revize fiyat uygulanacaktır. Bu fiyatlar enflasyon koşullarına göre yeni dönemde karşılıklı anlaşma doğrultusunda değişebilecektir.
+                            Bu fiyatlara ön muhasebe hizmetleri, yönetim muhasebesi, ekstra bordro hizmetleri, özel görüşme ve acil cevap talepleri gibi hizmetler ile devletin aldığı ücretler dahil değildir. Dönemi içinde servis değişiklik talebi bulunanlara göre de revize fiyat uygulanacaktır. Bu fiyatlar enflasyon koşullarına göre yeni dönemde karşılıklı anlaşma doğrultusunda değişebilecektir.
                             <br /><br />
                             İşlerine yeni başlayan müşterilerimiz için bu zamana kadar borç erteleme imkanı sunmaya çalıştık, çalışmaya devam ediyoruz. Ancak, 2024 Ocak ve devamı için aylık düzende ödeme talep etmekteyiz. Bugüne kadar borcunu tamamlamayan müşterilerimizin Aralık sonuna kadar ödemelerini tamamlamalarını rica ediyoruz. Aksi takdirde, üzülerek ifade ederek ödemesini düzenli yapmayan müşterilerimiz için hizmetlerimizi devam ettiremeyeceğimizi bildirmek durumundayız. Lütfen borç bilginiz hakkında bizle irtibata geçiniz.
                             <br /><br />
