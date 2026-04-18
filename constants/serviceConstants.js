@@ -1,19 +1,17 @@
 export const serviceNames = {
-    "english": ["Ankara Agreement", "Company Formation", "Address Services", "Bookkeeping", "Tax Services", "Year-End Accounts", 
+    "english": ["General Accounting & Consultancy", "Company Formation", "Address Services", "Bookkeeping", "Tax Services", "Year-End Accounts", 
                 "Payroll & Pensions", "Management Accounts", "Mortgage & Insurance", "Business Consultancy", "Market Research", "M&A - Due Diligence"],
-    "turkish": ["Ankara Anlaşması", "Şirket Kurulumu", "Adres Servisi", "Ön Muhasebe İşlemleri", "Vergi İşlemleri", "Dönem Sonu Muhasebe İşlemleri",
+    "turkish": ["Genel Muhasebe ve Danışmanlık", "Şirket Kurulumu", "Adres Servisi", "Ön Muhasebe İşlemleri", "Vergi İşlemleri", "Dönem Sonu Muhasebe İşlemleri",
                 "Maaş Bordroları & Emeklilik", "Yönetim Muhasebesi & Denetim", "Konut Kredisi & Sigorta", "İşletme Danışmanlığı", "Pazar Araştırması", "Birleşme & Satın Alma"]
 };
 
-export const serviceNameSlugs = ["ankara-agreement", "company-formation", "address-services", "bookkeeping", "tax-services", "year-end-accounts", 
+export const serviceNameSlugs = ["general-accounting-consultancy", "company-formation", "address-services", "bookkeeping", "tax-services", "year-end-accounts", 
                                  "payroll-pensions", "management-accounts", "mortgage-insurance", "business-consultancy", "market-research", "ma-due-diligence"];
 
 export const serviceNameContentMap = {
     "english": [
-        `We provide comprehensive services for those companies and individuals who are willing to set up and operate a business, either as a company or a sole-trader in the UK, through Turkish Businessperson Visa (ECAA-Ankara Agreement).
-        \nWe also prepare highly qualified business plans throughout the Visa application process.
-        \nThese include all registrations, bookkeeping, accounting as well as other consultancy services to help you run your business in the most appropriate way. You will be able to carry out your visa extensions on time, smoothly, comfortably and with firm steps.
-        \nIn addition to these, we also have services to manage the application process for relevant government incentives in line with your activities.`
+        `We provide comprehensive services for those companies and individuals who are willing to set up and operate a business, either as a company or a sole-trader in the UK. We prepare highly qualified business plans and also help businesses for all necessary initial registrations.
+        \nMoreover, we help businesses in bookkeeping, accounting as well as other consultancy services. This includes accounts preparation, tax calculations, return filing, etc that are relevant with all necessary accountancy needs.`
         ,
         `We carry out all necessary applications and registration procedures on your behalf to establish a new business in the UK.
         \nIn addition, we update the annual records and make changes that may occur in your company when you request.
@@ -32,12 +30,11 @@ export const serviceNameContentMap = {
         ,
         `In the UK, individuals and companies are obliged to pay certain taxes when applicable. Some of the personal taxes include income tax as well as dividend tax whereas those taxes related to your business consist such taxes like corporation tax and value added tax (VAT). 
         \nWe provide registration, filing and submission of any taxes that you have to pay to the tax authority, HMRC. Besides, you may consult to our experts about exemptions and any other issues related to your concerns on tax.
-        \nFor those companies that earn over £85,000 over the last 12 months, it is an obligation to register for VAT (Value Added Tax), unless the earnings are not under exemption. 
+        \nFor those companies that earn over £90,000 over the last 12 months, it is an obligation to register for VAT (Value Added Tax), unless the earnings are not under exemption. 
         \nBusinesses usually submit their VAT returns to HMRC every 3 months. We help businesses for their VAT returns and their questions on VAT.`
         ,
-        `All companies are obliged to file and submit end of year accounts once a year. Major financial tables, namely balance sheet, income statement and cash flow statement are being submitted to the Companies House as a report that would also appear in the filing history of your company. 
-        \nEnd of year accounts help you see the performance and profitability of your company as well as fulfil your tax obligations to the HMRC. 
-        \nTo this end, we support you with ACCA and FCCA certified chartered accountants who are providing these services for your business in the most appropriate way.`
+        `All companies are obliged to file and submit end of year accounts once a year. Major financial tables, namely balance sheet, income statement are being submitted to the Companies House as a report that would also appear in the filing history of your company. 
+        \nEnd of year accounts help you see the performance and profitability of your company as well as fulfil your tax obligations to the HMRC.`
         ,
         `We provide payroll services for your company employees as well as directors. These include processing payslips, sending them to the company and submitting to the HMRC.
         \nIn order to start regular payments to yourself as a self-employed or to all employees in your company, you need NINO to apply for PAYE registration to the HMRC. Upon your application, you will receive a PAYE reference number as well as Account Office Reference Number. These will be necessary to submit payslips to the HMRC every month. We help you in each step you need to take.
@@ -61,15 +58,18 @@ export const serviceNameContentMap = {
         ,
         `It is seen that there are many investment opportunities in the national or international area within the scope of the multinational business approach of our globalizing world. News on company marriage, joint ventures, mergers and acquisition are among the indispensable routine developments of the business world. 
         \nTo this end, we provide consultancy services for individuals or businesses that seek to invest either in the UK or in other countries as well as who are looking for an investor for their companies. 
-        \nWe assist with comprehensive services to both buyer and seller parties, by inclusive activities from pre-start to finish of the process.`
+        \nWe assist with comprehensive services to both buyer and seller parties, by inclusive activities from pre-start to finish of the process.
+        \nTo this end, we support you with ACCA and FCCA certified chartered accountants who are providing these services for your business in the most appropriate way.`
     ],
     "turkish": [
-        `Ankara Anlaşması kapsamında UK’de faaliyet göstermek isteyen vize başvuru sahiplerinin ihtiyaçları çerçevesinde, iş planı oluşturma, şirket kurulumu, şirket adresi, web sayfası oluşturma, banka hesabı açma, her türlü muhasebe işlemleri ve diğer gerekli konularda işletme danışmanlığı ayrıca faaliyetlerinize göre ilgili devlet teşviklerine başvuru sürecini yönetme hizmetlerimiz tecrübeli uzman kadromuz tarafından yerine getirilmektedir.
-        \nAnkara Anlaşması kapsamında yapılması gereken işlemlerin zamanında ve sorunsuz bir şekilde yerine getirilmesi için ihtiyaç duyduğunuz konularda hızlı ve doğru bilgiye bizi arayarak ulaşabilirsiniz.`
+        `İngiltere’de bulunan veya burada faaliyet göstermek isteyen birey ya da işletmelere her türlü muhasebe işlemleri ve diğer gerekli konularda işletme danışmanlığı sunmaktayız. 
+        \nBu kapsamda ayrıca, ihtiyaçlar çerçevesinde, iş planı oluşturma, şirket kurulumu, şirket adresi sağlama, web sayfası oluşturma, banka hesabı açma gibi konularda da yardımcı olmaktayız. 
+        \nUzman kadromuzla yıllardır tüm müşterilerimizin takdirini toplayacak şekilde muhasebe ile ilgili tüm ihtiyaçlara cevap vemek yanında işletmelerin faaliyetlerini en uygun şekilde sürdürebilmeleri adına gerekli danışmanlık hizmetleri konusunda da yardımcı olmaktayız.
+        \nMuhasebe hizmetleri içinde bordro hizmetleri, yılsonu mali raporları, KDV beyannamesi, kişisel gelir beyannamesi gibi belgelerin hazırlanması ve ilgili kurumlara sunulması ile birlikte ihtiyaca göre ön muhasebe hizmetleri sunmaktayız.`
         ,
         `Yeni bir işletme kurmak üzere gerekli bütün başvuru ve kayıt işlemlerinizi sizin adınıza yerine getiriyoruz. Bu doğrultuda, şahıs işletmeleri (sole trader) ve limited şirketler başta olmak üzere her türlü şirket kurulumu ve diğer gerekli işlemleri hizmetinize sunmaktayız.
         \nİlave olarak, yıllık onay gerektiren “Confirmation Statement” adı verilen güncellemeler ve şirketinizde meydana gelecek değişiklik talepleriniz için gerekli kayıtlar tarafımızca yapılmaktadır.
-        \nÖte yandan, işletmenize uygun internet sitesi oluşturma, sosyal medya görünürlüğü sunma gibi başlangıç aşamasında pazarlama faaliyetleri ile Londra merkezli adres sağlama ve banka hesabı açma gibi konularda destek olmatayız.
+        \nÖte yandan, işletmenize uygun internet sitesi oluşturma, sosyal medya görünürlüğü sunma gibi başlangıç aşamasında pazarlama faaliyetleri ile Londra merkezli adres sağlama ve banka hesabı açma gibi konularda destek olmaktayız.
         \nAyrıca, gerek Birleşik Krallık gerek Avrupa Birliği içerisinde geçerli nitelikte ticari marka tescil başvuru işlemlerini sizler adına yürütmekteyiz.`
         ,
         `Londra’nın en prestijli yerlerinden olan Covent Garden bölgesinde şirketiniz için adres kayıt imkanı sunmaktayız. Böylece iş dünyasında güven veren bir imaj oluşturmanıza katkı sağlayabilirsiniz. 
@@ -77,17 +77,16 @@ export const serviceNameContentMap = {
         \nŞirketimizin, veri güvenliği lisansı bulunmakta olup talebiniz halinde bu evrakı tarafınıza ulaştırabiliriz.`
         ,
         `İşletmenizin ihtiyaç duyduğu ön muhasebe kayıtlarını özenli bir şekilde tutabilmenize yardımcı olmaktayız. Bu kapsamda çeşitli ön muhasebe programları aracılığıyla size işletme faaliyetleriniz ve performansınız hakkında tam ve güncel bilgiye istediğiniz zamanda ulaşma imkanı sağlamaktayız.
-        \nAylık maaş bordroları hazırlama, kişisel ve şirkete ait vergilerin hesaplanması ve ilgili kurumlara bildirimde bulunulması gibi dosya işlemlerinizi titizlikle yürütmekteyiz.
         \nAyrıca, talep etmeniz halinde haftalık, aylık, yıllık ya da dilediğiniz periyotlarda infografik raporlar ile durum değerlendirme ve analiz hizmetleri sunmaktayız.`
         ,
         `Kişisel bazda yer alan gelir vergisi ve kâr payı vergisi gibi vergiler yanında şirketinize ait kurumlar vergisi ve katma değer vergisi gibi vergilerin hesaplanarak dosyalanması ve vergi otoritesine sunulması gibi işlemleri sizin adınıza yapmaktayız. Bununla birlikte vergiler ile ilgili güncel yasal düzenlemeler ve diğer sorularınız hakkında bilgi alabilmek için danışabilirsiniz. 
-        \nŞirketinizin, 12 aylık dönem içinde, KDV’den muaf olmayan ticari faaliyetlerinden elde ettiği gelirlerin £85,000 üzeri olması halinde HMRC’de KDV (VAT) kaydı yapılması gerekmektedir. Bununla birlikte, bu satış hacmine ulaşmadan da isteğe bağlı gönüllü olarak KDV kaydı yapılabilmektedir. KDV kaydı yapılması durumunda, KDV içeren gelirleriniz ve ödemeleriniz üzerinden HMRC’ye bildirimde bulunmanız gerekmekte olup bu süreç genellikle 3’er aylık periyotlar halinde işlemektedir. Bu kapsamda, gerekli işlemleri sizin adınıza yerine getirmekteyiz.`
+        \nİşletmenizin, birbirini takip eden 12 aylık dönem içinde, KDV’den muaf olmayan ticari faaliyetlerinden elde ettiği gelirlerin £90.000 üzeri olması halinde HMRC’de KDV (VAT) kaydı yapılması gerekmektedir. Bununla birlikte, bu satış hacmine ulaşmadan da isteğe bağlı gönüllü olarak KDV kaydı yapılabilmektedir. KDV kaydı yapılması durumunda, KDV içeren gelirleriniz ve ödemeleriniz üzerinden HMRC’ye bildirimde bulunmanız gerekmekte olup bu süreç genellikle 3’er aylık periyotlar halinde işlemektedir. Bu kapsamda, gerekli işlemleri sizin adınıza yerine getirmekteyiz.`
         ,
         `Şirketlerin her sene dönem sonu hesap kayıtlarını oluşturma yükümlülükleri bulunmaktadır. Bu hesaplamalar doğrultusunda şirkete ait bilanço, gelir tablosu ve nakit akış tablosunu içeren dönem sonu raporu oluşturulmaktadır. Böylece, şirketin kârlılık durumuna göre ödenmesi gereken vergi matrahı belirlenmekte, aynı zamanda şirketin performansı hakkında durum analizi ve projeksiyonlar yapılabilmektedir.
-        \nBu konuda uluslararası sertifika (ACCA, FCCA) sahibi deneyimli ve uzman muhasebeciler aracılığıyla, sizler için bu işlemleri özenle yerine getirmenize yardımcı olmaktayız.`
+        \nİşletmenizin ihtiyaç duyduğu bu raporların hazırlanıp ilgili kurumlara sunulması konusunda lisanslı mali müşavir olarak yardımcı olmaktayız.`
         ,
         `Şirket çalışanlarının aylık olarak maaş hesaplamalarının yapılması ve bunların bordro olarak hem şirkete ve hem de HMRC’ye sunulması, standart ön muhasebe faaliyetlerimiz arasında yer almaktadır.
-        \nMaaş ödemelerine ilişkin gerekli referans numaraları arasında yer alan PAYE numarası için HMRC’ye kayıt yapılması gerekmekte olup bunun için kendisine maaş ödenecek kişiye ait National Insurance Number (NINO) olması gerekmektedir. Bu yüzden, “Job Centre” olarak adlandırılan merkezlerde başvurularınızı yürütmeniz konusunda danışmanlık hizmeti sunmaktayız.
+        \nMaaş ödemelerine ilişkin gerekli referans numaraları arasında yer alan PAYE numarası için HMRC’ye kayıt yapılması gerekmekte olup bunun için kendisine maaş ödenecek kişiye ait National Insurance Number (NINO) olması gerekmektedir.
         \nAyrıca, size ya da çalışanlarınıza yönelik emeklilik hakları ve devlet destekleri gibi konularda sizi bilgilendirmekte ve gerekli adımları zamanında atmanıza yardımcı olmaktayız.`
         ,
         `Muhasebe faaliyetlerimiz rutin işlemlerin ötesine gitmekte olup şirketinize yönelik mali ve yönetsel konularda hangi alanlarda iyileştirmeler yapılabileceği, güncel mevzuat dahilinde hangi muhasebe işlemlerinin tatbik edilebileceği, maliyet muhasebesi gibi mali uzmanlık gerektiren konularda işletmenizi başarılı bir şekilde yönetmeniz için hizmet sunmaktayız.

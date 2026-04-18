@@ -37,9 +37,6 @@ export default function AnnouncementPage() {
                 <Navigation onPage="announcement" />
                 <main>
                     <section className="hero is-primary has-background-pattern services-hero" id="announcement">
-                        <div className="notification has-text-centered">
-                            Sevgili müşterilerimiz, 1 Kasım 2023 eski genel duyurumuzu okumak için buraya <Link href="/old-announcement"><a>tıklayınız</a></Link>
-                        </div>
                         <div className="hero-body">
                             <div className="container">
                                 <h1 className="title has-text-centered">
@@ -50,7 +47,7 @@ export default function AnnouncementPage() {
                                 Değerli müşterimiz,
                                 <br /><br />
                                 1) İngiltere'de kişisel gelir vergi mükelleflerinin gelir vergisi beyanname ve vergi ödemesi süresi için son gün, 31 Ocak’tır. Bu durum, İngiltere'deki bütün şahıs işletmeleri (Sole Trader) ve gelir vergisi mükellefleri (tax resident) için geçerlidir.
-                                Henüz vergi ödemesini yapmayanların 31 Ocak 2025’ten önce vergi ödemelerini tamamlamaları gerekmektedir. Vergi beyannamesi hazır olmayanların ise bizle irtibata geçerek 06/04/2023 ile 05/04/2024 tarihleri arasındaki bütün gelirlerini bize iletmeleri gerekmektedir. Bu gelirlere İngiltere dışında bu dönemde kazanılmış olup İngiltere’ye getirilmiş olan gelirler de dahildir. Bizim ilgilendiğimiz İngiltere’deki şirketinizden elde ettiğiniz maaş bilgisi, bizde bulunmaktadır. Bunun dışındaki gelirlerinizi bize iletmeniz gerekmektedir.
+                                Henüz vergi ödemesini yapmayanların 31 Ocak 2027’ten önce vergi ödemelerini tamamlamaları gerekmektedir. Vergi beyannamesi hazır olmayanların ise bizle irtibata geçerek 06/04/2025 ile 05/04/2026 tarihleri arasındaki bütün gelirlerini bize iletmeleri gerekmektedir. Bu gelirlere İngiltere dışında bu dönemde kazanılmış olup İngiltere’ye getirilmiş olan gelirler de dahildir. Bizim ilgilendiğimiz İngiltere’deki şirketinizden elde ettiğiniz maaş bilgisi, bizde bulunmaktadır. Bunun dışındaki gelirlerinizi bize iletmeniz gerekmektedir.
                                 <br /><br />
                                 2) Her bir şirket için ise, kuruluş tarihi dikkate alınarak hesap dönemleri farklılık göstermekle birlikte, şirket vergi beyanı ve ödeme süresi, hesap kesim tarihini müteakip en fazla 9 aydır. Bu kapsamda lütfen şirket hesaplarınızı tam ve doğru bir şekilde yapabilmemiz için sizle paylaştığımız Google Drive klasörüne csv formatındaki banka dökümünüz, nakit hareketler listesi ile alış ve satış faturalarınızı yükleme işlemini geciktirmeyiniz.
                                 Şirketlerin ayrıca yıllık güncel durum beyanını ifade eden Confirmation Statement işlem zorunluluğu vardır. Bunun için de zamanı geldikçe bilgilendirme yapmaya devam ediyoruz.
@@ -142,10 +139,10 @@ export default function AnnouncementPage() {
                             <br /><br />
                             1) The last day for personal income taxpayers in the UK to file their income tax returns and pay their
                             taxes is January 31. This applies to all sole traders and tax residents in the UK. Those who have not
-                            yet made their tax payments must complete their tax payments before January 31, 2025.
+                            yet made their tax payments must complete their tax payments before January 31, 2027.
                             <br /><br />
                             Those who do not have their tax returns ready must contact us and send us all their income between
-                            06/04/2023 and 05/04/2024. This income includes income earned outside the UK during this period
+                            06/04/2025 and 05/04/2026. This income includes income earned outside the UK during this period
                             and brought to the UK. We have the salary information you received from your company in the UK
                             that we are interested in. You must send us any other income.
                             <br /><br />

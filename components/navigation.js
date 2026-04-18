@@ -11,8 +11,8 @@ function toggleBurger() {
 }
 
 function getAbbvr(languageName) {
-  if (languageName == "english") { return "EN"; }
-  else if (languageName == "turkish") { return "TR"; }
+  if (languageName == "english") { return "TR"; }
+  else if (languageName == "turkish") { return "EN"; }
   else { return "UNDEF"; }
 }
 
@@ -58,7 +58,7 @@ export default function Navigation(props) {
                 <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "Services" : "Servisler"}</a>
               </Link>
               <Link href="/">
-                <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "About" : "Hakkında"}</a>
+                <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "About" : "Hakkımızda"}</a>
               </Link>
               <Link href="/contact">
                 <a className="navbar-item navbar-item-hoverable is-active">{currentLanguage == "english" ? "Contact" : "İletişim"}</a>
@@ -118,7 +118,7 @@ export default function Navigation(props) {
                 <a className="navbar-item navbar-item-hoverable is-active">{currentLanguage == "english" ? "Services" : "Servisler"}</a>
               </Link>
               <Link href="/">
-                <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "About" : "Hakkında"}</a>
+                <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "About" : "Hakkımızda"}</a>
               </Link>
               <Link href="/contact">
                 <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "Contact" : "İletişim"}</a>
@@ -177,7 +177,7 @@ export default function Navigation(props) {
               <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "Services" : "Servisler"}</a>
             </Link>
             <Link href="/">
-              <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "About" : "Hakkında"}</a>
+              <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "About" : "Hakkımızda"}</a>
             </Link>
             <Link href="/contact">
               <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "Contact" : "İletişim"}</a>
@@ -255,7 +255,7 @@ export default function Navigation(props) {
               smooth={true}
               offset={-95}
               duration={500} onClick={() => toggleBurger()}>
-              {currentLanguage == "english" ? "About" : "Hakkında"}
+              {currentLanguage == "english" ? "About" : "Hakkımızda"}
             </ScrollerLink>
             <Link href="/contact">
               <a className="navbar-item navbar-item-hoverable">{currentLanguage == "english" ? "Contact" : "İletişim"}</a>

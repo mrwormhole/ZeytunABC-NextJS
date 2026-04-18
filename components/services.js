@@ -51,7 +51,7 @@ export default function Services() {
 
             <div className="columns is-centered is-vcentered mt-5">
                 <div className="column is-4-tablet has-text-centered is-3-desktop service-box mt-2 mx-5">
-                    <a href="/services/ankara-agreement" className="service-box-cover-link" />
+                    <a href="/services/general-accounting-consultancy" className="service-box-cover-link" />
                     <FontAwesomeIcon className="category-icon" icon={faUsers} />
                     <h2>{currentLanguage == "english" ? serviceNames["english"][0] : serviceNames["turkish"][0]}</h2>
                     

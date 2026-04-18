@@ -60,7 +60,7 @@ export default function HomePage() {
         <Introduction />
         <Certification />
         <Services />
-        <ServiceFees />
+        {/* <ServiceFees /> */}
         <About />
         <ContactForm />
       </main>

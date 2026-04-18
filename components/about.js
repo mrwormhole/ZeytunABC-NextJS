@@ -11,12 +11,11 @@ export default function About() {
                         <div className="column is-6 is-offset-3">
                             <h2 className="title"> About Us </h2>
                             <br />
-                            <p className="subtitle"> 
-                            ZEYTUN ABC provides accounting, bookkeeping and consultancy services for businesses which are based or seek to be established in the United Kingdom.
-                            We provide our services with ACCA and FCCA certified chartered accountants, AAT qualified professional bookkeepers and specialist business advisors who have PhD degree. <br /> <br /> 
-                            We use cloud-based accounting software and the advantage of Open Banking opportunities to serve with the most up to date solutions for your accountancy needs.
-                            We also apply various analysis techniques and offer different aspects of financial data to support our clients in their informational and practical needs.  <br /> <br /> 
-                            We provide perfect solutions for businesses as well as individuals who need high quality business consultancy and accountancy services.
+                            <p className="subtitle">
+                            ZEYTUN ABC provides accounting, bookkeeping and consultancy services for businesses which are based or seek to be established in the United Kingdom. <br /> <br /> 
+                            We use cloud-based accounting software, which is approved by the HMRC for MTD requirements. <br /> <br />
+                            We also apply various analysis techniques and offer different aspects of financial data to support our clients in their informational and practical needs. <br /> <br />
+                            We provide perfect solutions for businesses as well as individuals who need high quality business consultancy and accountancy services. 
                             </p>
                             <br />
                             {/*<div className="buttons is-centered">
@@ -42,7 +41,7 @@ export default function About() {
                             <h2 className="title"> Hakkımızda </h2>
                             <br />
                             <p className="subtitle"> 
-                            ZEYTUN ABC, Birleşik Krallık’ta yerleşik olan veya yeni kurulacak işletmeler için muhasebe ve danışmanlık hizmetleri vermektedir. Hizmetlerimizi ACCA ve FCCA sertifikalı muhasebeciler ve doktora derecesine sahip uzman iş danışmanları aracılığıyla sağlamaktayız.
+                            ZEYTUN ABC, Birleşik Krallık’ta yerleşik olan veya yeni kurulacak işletmeler için muhasebe ve danışmanlık hizmetleri vermektedir.
                             <br /><br />Muhasebe ihtiyaçlarınız için, bulut tabanlı muhasebe yazılımları ve entegre bankacılık gibi araçları da kullanarak güncel çözümler sunmaktayız. Böylece, muhasebe işlemlerinizi, internet ve telefon uygulamaları aracılığıyla istediğiniz yerden takip edebilirsiniz.
                             <br /><br />Ayrıca, müşterilerimizi tam ve anlaşılır bir şekilde bilgilendirirken pratik ihtiyaçlarını sorunsuz yerine getirmeleri için desteklemekteyiz. Başarılı bir iş için gerekli adımları zamanında ve doğru bir şekilde atmanız için yardımcı olmaya hazırız.
                             </p>

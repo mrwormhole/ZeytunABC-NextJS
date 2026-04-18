@@ -44,7 +44,7 @@ export default function ContactCardForm() {
             }}>
             <div className="banner">
                 <h1>{currentLanguage == "english" ? "CONTACT US" : "BİZE ULAŞIN"}</h1>
-                <h3>{currentLanguage == "english" ? "Fill out the form below to learn more!" : "Daha fazlasını öğrenmek için aşağıdaki formu doldurun!"}</h3>
+                <h3>{currentLanguage == "english" ? "Please fill out the form below to learn more!" : "Daha fazlasını öğrenmek için aşağıdaki formu doldurun!"}</h3>
             </div>
             
             <label className="label paint-label-white">{currentLanguage == "english" ? "Personal Details" : "Kişisel Detaylar"}</label>
